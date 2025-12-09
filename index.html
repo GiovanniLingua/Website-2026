@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul's Mini Workshop | BMW, Mini, Audi & VW Specialist Pretoria</title>
     <meta name="description" content="Official Celtic Tuning dealer Pretoria. BMW, Mini, Audi & VW repairs, Stage 1-3 remaps, DPF/EGR/AdBlue delete. RMI & MIWA approved. Call 012 751 8458">
-    <meta name="keywords" content="celtic tuning pretoria,bmw tuning pretoria,dpf delete pretoria,golf r tuning pretoria,mini specialist pretoria">
+    <meta name="keywords" content="celtic tuning pretoria,bmw tuning pretoria,dpf delete pretoria,golf r tuning pretoria,mini specialist pretoria,chip tuning pretoria">
     <link rel="icon" type="image/png" href="https://files.catbox.moe/4x7h0j/pauls-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        :root {
-            --bg: #0b1120;
-            --panel: #141a2b;
-            --accent: #00d4ff;
-            --highlight: #00ff9d;
-            --text: #e0e0e0;
-        }
+        html{scroll-behavior:smooth;}
+        :root{--bg:#0a0e1a;--deep:#0f1629;--panel:#141a2e;--accent:#1e90ff;--text:#e0e7ff;}
         *{margin:0;padding:0;box-sizing:border-box;}
         body{
             font-family:'Exo 2',sans-serif;
@@ -25,56 +20,66 @@
             line-height:1.6;
         }
         .hero,section{position:relative;}
-        .hero::before,section::before{content:'';position:absolute;inset:0;background:rgba(11,17,32,0.88);z-index:-1;}
+        .hero::before,section::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.92);z-index:-1;}
 
         .hero{min-height:100vh;display:flex;align-items:center;text-align:center;padding:20px;}
-        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(2.8rem,10vw,5.5rem);color:var(--accent);text-shadow:0 0 30px rgba(0,212,255,0.6);margin-bottom:1rem;}
+        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(2.8rem,10vw,5.8rem);color:white;text-shadow:0 0 40px rgba(30,144,255,0.6);}
         .hero p{font-size:clamp(1.1rem,4vw,1.5rem);margin:1rem 0;}
-        .btn{display:inline-block;padding:18px 36px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.2rem;min-width:200px;text-align:center;text-decoration:none;transition:0.3s;}
+        .btn{display:inline-block;padding:18px 36px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.2rem;min-width:200px;text-decoration:none;transition:0.3s;}
         .btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1da851;transform:translateY(-4px);}
-        .btn-call{background:var(--accent);color:black;}.btn-call:hover{background:var(--highlight);}
+        .btn-call{background:var(--accent);color:white;}.btn-call:hover{background:#4682b4;}
 
-        nav{position:fixed;top:0;width:100%;background:rgba(11,17,32,0.98);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,212,255,0.2);z-index:1000;}
+        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,144,255,0.2);z-index:1000;}
         .nav-container{max-width:1400px;margin:0 auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
-        .logo{font-family:'Orbitron';font-size:1.8rem;color:var(--accent);}
-        .hamburger{display:block;font-size:2.2rem;color:var(--accent);cursor:pointer;}
-        .nav-menu{display:flex;gap:2rem;position:fixed;top:70px;left:0;width:100%;background:var(--bg);flex-direction:column;padding:1.5rem 0;transform:translateY(-150%);transition:0.4s;}
+        .logo{font-family:'Orbitron';font-size:1.9rem;color:white;text-shadow:0 0 15px var(--accent);}
+        .hamburger{display:block;font-size:2.2rem;color:white;cursor:pointer;}
+        .nav-menu{display:flex;gap:2rem;position:fixed;top:70px;left:0;width:100%;background:var(--deep);flex-direction:column;padding:1.5rem 0;transform:translateY(-150%);transition:0.4s;}
         .nav-menu.active{transform:translateY(0);}
         .nav-menu a{color:var(--text);text-decoration:none;font-size:1.4rem;padding:1rem;text-align:center;}
         .nav-menu a:hover{color:var(--accent);}
 
-        section{padding:80px 20px;max-width:1400px;margin:0 auto;}
-        .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(2.5rem,8vw,4rem);text-align:center;color:var(--accent);margin-bottom:3rem;text-shadow:0 0 20px rgba(0,212,255,0.4);}
+        section{padding:90px 20px;max-width:1400px;margin:0 auto;}
+        .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(2.6rem,8vw,4.2rem);text-align:center;color:white;margin-bottom:3.5rem;text-shadow:0 0 25px rgba(30,144,255,0.5);}
 
         .grid,.tuning-grid,.gallery-grid{display:grid;grid-template-columns:1fr;gap:2rem;}
         @media(min-width:768px){.grid,.tuning-grid{grid-template-columns:repeat(2,1fr);}.gallery-grid{grid-template-columns:repeat(2,1fr);}}
         @media(min-width:1024px){.grid,.tuning-grid,.gallery-grid{grid-template-columns:repeat(auto-fit,minmax(340px,1fr));}}
 
-        .card,.tune-card{background:rgba(20,26,43,0.95);backdrop-filter:blur(8px);border:1px solid rgba(0,212,255,0.3);border-radius:16px;overflow:hidden;transition:0.3s;}
-        .card:hover,.tune-card:hover{transform:translateY(-10px);}
-        .card-img{height:200px;background-size:cover;background-position:center;}
-        .card-content,.tune-card{padding:1.8rem;text-align:center;}
-        .card h3,.tune-card h3{color:var(--highlight);font-size:1.6rem;}
-        .power{font-size:2rem;color:var(--accent);font-weight:800;}
+        .card,.tune-card{background:rgba(20,26,46,0.96);backdrop-filter:blur(10px);border:1px solid rgba(30,144,255,0.3);border-radius:18px;overflow:hidden;transition:0.4s;box-shadow:0 12px 35px rgba(0,0,0,0.6);}
+        .card:hover,.tune-card:hover{transform:translateY(-12px);border-color:var(--accent);box-shadow:0 20px 50px rgba(30,144,255,0.2);}
+        .card-img{height:210px;background-size:cover;background-position:center;}
+        .card-content,.tune-card{padding:2rem;text-align:center;}
+        .card h3,.tune-card h3{color:var(--accent);font-size:1.7rem;margin-bottom:0.8rem;}
+        .power{font-size:2.1rem;color:white;font-weight:800;}
 
-        table{width:100%;border-collapse:collapse;margin:3rem 0;background:rgba(20,26,43,0.95);border-radius:12px;overflow:hidden;font-size:0.95rem;}
-        th{background:var(--highlight);color:black;padding:1rem;}
-        td{padding:0.8rem 0.5rem;text-align:center;border-bottom:1px solid rgba(0,212,255,0.1);}
+        /* TESTIMONIALS */
+        .testimonials{background:rgba(20,26,46,0.96);}
+        .review{background:rgba(20,26,46,0.98);border:2px solid var(--accent);border-radius:20px;padding:2.5rem;margin:2rem auto;max-width:900px;text-align:center;box-shadow:0 15px 40px rgba(30,144,255,0.15);}
+        .stars{color:#ffd700;font-size:2.2rem;margin-bottom:1rem;}
+        .review p{font-size:1.3rem;font-style:italic;margin:1.5rem 0;}
+        .review strong{color:var(--accent);font-size:1.4rem;}
 
-        .gallery-item{height:240px;background-size:cover;border-radius:16px;cursor:pointer;position:relative;overflow:hidden;transition:0.3s;}
-        .gallery-item:hover{transform:scale(1.05);}
-        .gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,0.8));}
-        .gallery-caption{position:absolute;bottom:15px;left:15px;right:15px;color:white;font-size:1.1rem;font-weight:bold;}
+        table{width:100%;border-collapse:collapse;margin:3rem 0;background:rgba(20,26,46,0.96);border-radius:14px;overflow:hidden;}
+        th{background:var(--accent);color:white;padding:1.2rem;}
+        td{padding:1rem;text-align:center;border-bottom:1px solid rgba(30,144,255,0.2);}
+
+        .gallery-item{height:250px;background-size:cover;border-radius:18px;cursor:pointer;position:relative;overflow:hidden;transition:0.4s;}
+        .gallery-item:hover{transform:scale(1.06);box-shadow:0 20px 50px rgba(30,144,255,0.3);}
+        .gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(10,14,26,0.9));}
+        .gallery-caption{position:absolute;bottom:18px;left:18px;right:18px;color:white;font-weight:bold;font-size:1.2rem;}
+
+        .map-container{margin:3rem auto;max-width:1000px;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(30,144,255,0.2);}
+        iframe{width:100%;height:450px;border:0;}
 
         .lightbox{display:none;position:fixed;z-index:9999;inset:0;background:#000;align-items:center;justify-content:center;}
         .lightbox.active{display:flex;}
-        .lightbox img{max-width:96%;max-height:96vh;border-radius:12px;}
-        .close-lightbox{position:absolute;top:20px;right:20px;font-size:3.5rem;color:white;cursor:pointer;}
-        .nav-arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:4rem;color:rgba(0,212,255,0.8);cursor:pointer;}
+        .lightbox img{max-width:96%;max-height:96vh;border-radius:14px;}
+        .close-lightbox{position:absolute;top:20px;right:20px;font-size:4rem;color:white;cursor:pointer;}
+        .nav-arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:4.5rem;color:rgba(30,144,255,0.8);cursor:pointer;}
         .prev{left:15px;}.next{right:15px;}
 
-        .wa-float a{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.4rem;box-shadow:0 6px 20px rgba(0,0,0,0.6);z-index:998;animation:pulse 2s infinite;}
-        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 16px transparent}}
+        .wa-float a{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.6rem;box-shadow:0 8px 30px rgba(0,0,0,0.7);z-index:998;animation:pulse 2s infinite;}
+        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 18px transparent}}
 
         @media(min-width:969px){
             .hamburger{display:none;}
@@ -85,14 +90,13 @@
 </head>
 <body>
 
-    <!-- HERO -->
     <section class="hero">
         <div style="max-width:1000px;margin:0 auto;">
             <h1>PAUL'S MINI WORKSHOP</h1>
             <p>GERMAN CAR SPECIALIST • PRETORIA</p>
-            <p style="font-size:1.2rem;margin:1.5rem 0;">
+            <p style="font-size:1.3rem;margin:1.8rem 0;">
                 Official Celtic Tuning Dealer • RMI • MIWA • Since 2011<br>
-                <strong style="color:var(--accent);font-size:1.4rem;">012 751 8458 / 012 751 8459</strong>
+                <strong style="color:var(--accent);font-size:1.5rem;">012 751 8458 / 012 751 8459</strong>
             </p>
             <div>
                 <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp Quote</a>
@@ -101,7 +105,6 @@
         </div>
     </section>
 
-    <!-- NAV -->
     <nav>
         <div class="nav-container">
             <div class="logo">Paul's Mini Workshop</div>
@@ -112,44 +115,54 @@
                 <a href="#">Home</a>
                 <a href="#services">Services</a>
                 <a href="#tuning">Tuning</a>
+                <a href="#testimonials">Reviews</a>
                 <a href="#gallery">Gallery</a>
+                <a href="#location">Location</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- SERVICES -->
     <section id="services">
         <h2 class="section-title">SERVICES</h2>
         <div class="grid">
-            <div class="card">
-                <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-9c3d5b1d8d68?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div>
-                <div class="card-content"><h3>MAJOR & MINOR SERVICES</h3><p>All German vehicles</p></div>
-            </div>
-            <div class="card">
-                <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1626663999135-57e21e7b1b53?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div>
-                <div class="card-content"><h3>CELTIC CHIP TUNING</h3><p>Stage 1–3 Remaps</p></div>
-            </div>
-            <div class="card">
-                <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1618843479313-40f8e899fcce?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div>
-                <div class="card-content"><h3>DIAGNOSTICS</h3><p>ISTA • ODIS • VCDS</p></div>
-            </div>
+            <div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-9c3d5b1d8d68?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div><div class="card-content"><h3>MAJOR & MINOR SERVICES</h3><p>All German vehicles</p></div></div>
+            <div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1626663999135-57e21e7b1b53?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div><div class="card-content"><h3>CELTIC CHIP TUNING</h3><p>Stage 1–3 Remaps</p></div></div>
+            <div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1618843479313-40f8e899fcce?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=90')"></div><div class="card-content"><h3>DIAGNOSTICS</h3><p>ISTA • ODIS • VCDS</p></div></div>
         </div>
     </section>
 
-    <!-- TUNING -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>"Paul saved my 750i! It had misfires, rough idle and no one could fix it. He diagnosed it in 30 minutes, remapped it and now it runs smoother and stronger than when it left the showroom. Best mechanic in Pretoria – hands down!"</p>
+            <strong>— Christiaan Pienaar (BMW 750i)</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>"Stage 2 on my Golf 8 R is insane! 360kW and still 100% reliable daily. Paul is the only guy I trust with my car. Highly recommended!"</p>
+            <strong>— Jacques van der Merwe (VW Golf 8 R)</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>"DPF delete + Stage 3 on RS3 8Y – absolutely transformed the car. Paul explained everything and delivered more than promised. 10/10 service!"</p>
+            <strong>— Ruan Pretorius (Audi RS3 8Y)</strong>
+        </div>
+    </section>
+
     <section id="tuning">
         <h2 class="section-title">CELTIC PERFORMANCE TUNING</h2>
-        <p style="text-align:center;font-size:1.2rem;max-width:900px;margin:0 auto 3rem;">
-            Official Celtic Tuning dealer • Proven safe gains • 12-month engine warranty • Dyno verified
+        <p style="text-align:center;font-size:1.3rem;max-width:900px;margin:0 auto 4rem;color:#b0c4ff;">
+            Official Celtic Tuning dealer • Safe, proven gains • 12-month engine warranty • Dyno verified
         </p>
         <div class="tuning-grid">
-            <div class="tune-card"><h3>BMW M340i 3.0T</h3><p class="power">+95 kW | +160 Nm</p><p>Stage 1: 275 kW → <strong>370 kW</strong></p></div>
-            <div class="tune-card"><h3>VW Golf 8 R</h3><p class="power">+90 kW | +140 Nm</p><p>Stage 1: 235 kW → <strong>325 kW</strong></p></div>
-            <div class="tune-card"><h3>Audi RS3 8Y</h3><p class="power">+135 kW | +200 Nm</p><p>Stage 2: 294 kW → <strong>429 kW</strong></p></div>
-            <div class="tune-card"><h3>Mini JCW GP</h3><p class="power">+85 kW | +150 Nm</p><p>Stage 2: 225 kW → <strong>310 kW</strong></p></div>
+            <div class="tune-card"><h3>BMW M340i 3.0T</h3><p class="power">+95 kW | +160 Nm</p><p>Stage 1: 275 → <strong>370 kW</strong></p></div>
+            <div class="tune-card"><h3>VW Golf 8 R</h3><p class="power">+90 kW | +140 Nm</p><p>Stage 1: 235 → <strong>325 kW</strong></p></div>
+            <div class="tune-card"><h3>Audi RS3 8Y</h3><p class="power">+135 kW | +200 Nm</p><p>Stage 2: 294 → <strong>429 kW</strong></p></div>
+            <div class="tune-card"><h3>Mini JCW GP</h3><p class="power">+85 kW | +150 Nm</p><p>Stage 2: 225 → <strong>310 kW</strong></p></div>
         </div>
-        <h3 style="text-align:center;margin:4rem 0 2rem;color:var(--highlight);">POPULAR OPTIONS</h3>
+        <h3 style="text-align:center;margin:4rem 0 2rem;color:var(--accent);">POPULAR OPTIONS</h3>
         <table>
             <tr><th>Vehicle</th><th>Stage 1</th><th>Stage 2</th><th>Stage 3</th></tr>
             <tr><td>BMW F30 320d</td><td>+45 kW</td><td>+65 kW</td><td>+85 kW</td></tr>
@@ -158,12 +171,11 @@
             <tr><td>AMG A45</td><td>+120 kW</td><td>+160 kW</td><td>500+ kW</td></tr>
         </table>
         <div style="text-align:center;margin:3rem 0;">
-            <p style="font-size:1.3rem;"><strong>Also Available:</strong> DPF Delete • EGR Delete • AdBlue Off • Pop & Bang</p>
+            <p style="font-size:1.4rem;"><strong>Also Available:</strong> DPF Delete • EGR Delete • AdBlue Off • Pop & Bang</p>
             <a href="https://wa.me/27827518458?text=Hi%2C%20I%20want%20a%20quote%20for%20Stage%20X%20tuning" class="btn btn-wa" style="font-size:1.5rem;padding:20px 50px;">Get Quote on WhatsApp</a>
         </div>
     </section>
 
-    <!-- GALLERY -->
     <section id="gallery">
         <h2 class="section-title">OUR WORK</h2>
         <div class="gallery-grid">
@@ -174,18 +186,24 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" style="text-align:center;">
-        <h2 class="section-title">VISIT US</h2>
-        <p style="font-size:1.6rem;"><strong>487 Karel Trichardt Ave, Mountain View, Pretoria</strong></p>
-        <p>Mon–Thu: 07:30–17:00 • Friday: 07:30–16:00 • Weekends: Closed</p>
+    <section id="location">
+        <h2 class="section-title">FIND US</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.028!2d28.220456!3d-25.709876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561e5f4a8b2c3%3A0x9ab5e8f3d1c2e4f5!2s487%20Karel%20Trichardt%20Ave%2C%20Mountain%20View%2C%20Pretoria%2C%200082!5e0!3m2!1sen!2sza!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p style="text-align:center;margin-top:2rem;font-size:1.3rem;">
+            487 Karel Trichardt Avenue, Mountain View, Pretoria<br>
+            Mon–Thu: 07:30–17:00 • Friday: 07:30–16:00 • Weekends: Closed
+        </p>
+    </section>
+
+    <section id="contact" style="text-align:center;padding-bottom:120px;">
         <div style="margin:3rem 0;">
-            <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp</a>
-            <a href="tel:0127518458" class="btn btn-call">Call Now</a>
+            <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp Now</a>
+            <a href="tel:0127518458" class="btn btn-call">Call 012 751 8458</a>
         </div>
     </section>
 
-    <!-- LIGHTBOX -->
     <div class="lightbox" id="lightbox">
         <span class="close-lightbox" onclick="closeLightbox()">×</span>
         <span class="nav-arrow prev" onclick="changePhoto(-1)">‹</span>
@@ -193,7 +211,6 @@
         <img id="lightbox-img" src="" alt="">
     </div>
 
-    <!-- WHATSAPP FLOAT -->
     <div class="wa-float"><a href="https://wa.me/27827518458" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
 
     <script>
@@ -210,7 +227,4 @@
         const lb=document.getElementById("lightbox");
         lb.addEventListener("touchstart",e=>startX=e.touches[0].clientX);
         lb.addEventListener("touchend",e=>{if(startX){let diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>50)changePhoto(diff>0?1:-1);startX=0;}});
-        document.addEventListener("keydown",e=>{if(lb.classList.contains("active")){if(e.key==="Escape")closeLightbox();if(e.key==="ArrowLeft")changePhoto(-1);if(e.key==="ArrowRight")changePhoto(1);}});
-    </script>
-</body>
-</html>
+        document.addEventListener("keydown",e
