@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul's Mini Workshop | BMW, Mini, Audi & VW Specialist Pretoria</title>
-    <meta name="description" content="Official Celtic Tuning dealer Pretoria. BMW, Mini, Audi & VW repairs, Stage 1-3 remaps, DPF delete. RMI & MIWA approved. Call 012 751 8458">
-    <meta name="keywords" content="celtic tuning pretoria,bmw tuning pretoria,dpf delete pretoria,golf r tuning pretoria,mini specialist pretoria">
+    <title>Paul's Mini Workshop - Vehicle Repairs in Pretoria | BMW Mini Audi VW Specialist</title>
+    <meta name="description" content="Paul's Mini Workshop - Vehicle Repairs in Pretoria. Official Celtic Tuning dealer. BMW, Mini, Audi & VW repairs, Stage 1-3 remaps, DPF delete. RMI & MIWA approved. Call 012 751 8458">
+    <meta name="keywords" content="pauls mini workshop,vehicle repairs pretoria,bmw repairs pretoria,mini specialist pretoria,celtic tuning pretoria,dpf delete pretoria,golf r tuning pretoria,audi rs3 tuning">
     <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -13,53 +13,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
     <style>
         html{scroll-behavior:smooth;}
-        :root{--bg:#0a0e1a;--deep:#0f1629;--panel:#141a2e;--accent:#1e90ff;--text:#e0e7ff;}
+        :root{--bg:#0a0e1a;--deep:#0f1629;--accent:#1e90ff;--text:#e0e7ff;}
         *{margin:0;padding:0;box-sizing:border-box;}
         body{font-family:'Exo 2',sans-serif;background:var(--bg) url('https://img.freepik.com/premium-photo/internal-design-car-engine-blue-tone-black-background-free-space-right-side-text_67340-577.jpg') center/cover fixed;color:var(--text);line-height:1.6;}
         .hero,section{position:relative;}
-        .hero::before,section::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.92);z-index:-1;}
+        .hero::before,section::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.93);z-index:-1;}
         .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
-        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(2.8rem,10vw,6rem);color:white;text-shadow:0 0 40px rgba(30,144,255,0.6);}
-        .btn{display:inline-block;padding:18px 36px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.2rem;min-width:200px;text-decoration:none;transition:0.3s;}
-        .btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1da851;transform:translateY(-4px);}
-        .btn-call{background:var(--accent);color:white;}.btn-call:hover{background:#4682b4;}
-        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,144,255,0.2);z-index:1000;}
-        .nav-container{max-width:1400px;margin:0 auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
-        .logo{display:flex;align-items:center;gap:12px;font-family:'Orbitron';font-size:1.9rem;color:white;text-shadow:0 0 15px var(--accent);}
-        .logo img{height:46px;width:auto;border-radius:6px;}
+        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(3rem,11vw,6.5rem);color:white;text-shadow:0 0 50px rgba(30,144,255,0.7);margin:0;}
+        .hero .subtitle{font-size:clamp(1.4rem,5vw,2.2rem);color:var(--accent);font-weight:800;margin:10px 0 20px;}
+        .btn{display:inline-block;padding:18px 40px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.3rem;min-width:240px;text-decoration:none;transition:0.3s;box-shadow:0 8px 25px rgba(0,0,0,0.4);}
+        .btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1da851;transform:translateY(-5px);}
+        .btn-call{background:var(--accent);color:white;}.btn-call:hover{background:#4682b4;transform:translateY(-5px);}
+        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(15px);border-bottom:1px solid rgba(30,144,255,0.3);z-index:1000;}
+        .nav-container{max-width:1450px;margin:0 auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
+        .logo{display:flex;align-items:center;gap:14px;font-family:'Orbitron';font-size:2rem;color:white;text-shadow:0 0 20px var(--accent);}
+        .logo img{height:52px;width:auto;border-radius:10px;}
         .logo-text{display:none;}
         @media(min-width:969px){.logo-text{display:block;}}
-        .hamburger{display:block;font-size:2.3rem;color:white;cursor:pointer;}
-        .nav-menu{display:flex;gap:2rem;position:fixed;top:72px;left:0;width:100%;background:var(--deep);flex-direction:column;padding:1.5rem 0;transform:translateY(-150%);transition:0.4s;}
+        .hamburger{display:block;font-size:2.4rem;color:white;cursor:pointer;}
+        .nav-menu{display:flex;gap:2.5rem;position:fixed;top:75px;left:0;width:100%;background:var(--deep);flex-direction:column;padding:2rem 0;transform:translateY(-200%);transition:0.5s;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
         .nav-menu.active{transform:translateY(0);}
-        .nav-menu a{color:var(--text);text-decoration:none;font-size:1.4rem;padding:1rem;text-align:center;}
+        .nav-menu a{color:var(--text);text-decoration:none;font-size:1.5rem;padding:1rem;text-align:center;font-weight:600;}
         .nav-menu a:hover{color:var(--accent);}
-        section{padding:90px 20px;max-width:1400px;margin:0 auto;}
-        .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(2.6rem,8vw,4.5rem);text-align:center;color:white;margin-bottom:3.5rem;text-shadow:0 0 25px rgba(30,144,255,0.5);}
-        .wa-float a{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.6rem;box-shadow:0 8px 30px rgba(0,0,0,0.7);z-index:998;animation:pulse 2s infinite;}
-        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 18px transparent}}
-        @media(min-width:969px){.hamburger{display:none;}.nav-menu{position:static;transform:none;flex-direction:row;padding:0;background:none;}.nav-menu a{font-size:1.1rem;padding:0;}}
+        section{padding:100px 20px;max-width:1450px;margin:0 auto;}
+        .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(2.8rem,9vw,5rem);text-align:center;color:white;margin-bottom:4rem;text-shadow:0 0 30px rgba(30,144,255,0.6);}
+        .wa-float a{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 10px 35px rgba(0,0,0,0.8);z-index:999;animation:pulse 2s infinite;}
+        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.8)}70%{box-shadow:0 0 0 20px transparent}}
+        @media(min-width:969px){.hamburger{display:none;}.nav-menu{position:static;transform:none;flex-direction:row;padding:0;background:none;box-shadow:none;}.nav-menu a{font-size:1.15rem;}}
     </style>
 </head>
 <body>
 
 <!-- HERO -->
 <section class="hero">
-    <div style="max-width:1000px;margin:0 auto;">
-        <h1>PAUL'S MINI WORKSHOP</h1>
-        <p style="font-size:1.4rem;margin:1.5rem 0;">GERMAN CAR SPECIALIST • PRETORIA</p>
-        <p style="font-size:1.3rem;margin:1.8rem 0;">
-            Official Celtic Tuning Dealer • RMI • MIWA • Since 2011<br>
-            <strong style="color:var(--accent);font-size:1.6rem;">012 751 8458 / 012 751 8459</strong>
+    <div style="max-width:1100px;margin:0 auto;">
+        <h1>Paul's Mini Workshop</h1>
+        <div class="subtitle">Vehicle Repairs in Pretoria</div>
+        <p style="font-size:1.6rem;margin:2rem 0;">GERMAN CAR SPECIALIST • PRETORIA</p>
+        <p style="font-size:1.4rem;margin:1.5rem 0;">
+            Official Celtic Tuning Dealer • RMI • MIWA Approved • Since 2011<br>
+            <strong style="color:var(--accent);font-size:1.9rem;">012 751 8458 / 012 751 8459</strong>
         </p>
-        <div>
-            <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp Quote</a>
-            <a href="tel:0127518458" class="btn btn-call">Call Now</a>
+        <div style="margin-top:35px;">
+            <a href="https://wa.me/27827518458 class="btn btn-wa">WhatsApp Quote Now</a>
+            <a href="tel:0127518458" class="btn btn-call">Call Workshop</a>
         </div>
     </div>
 </section>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
 <nav>
     <div class="nav-container">
         <a href="#" class="logo">
@@ -86,35 +88,35 @@
     <div class="grid">
         <div class="card">
             <div class="card-img" style="background-image:url('https://th.bing.com/th/id/R.ac7bc8327b4f7894293a38c43aed1548?rik=cIJlEGd2VPdE5g&pid=ImgRaw&r=0')"></div>
-            <div class="card-content"><h3>MAJOR & MINOR SERVICES</h3><p>All German vehicles</p></div>
+            <div class="card-content"><h3>MAJOR & MINOR SERVICES</h3><p>All German Vehicles • Full Diagnostics Included</p></div>
         </div>
         <div class="card">
             <div class="card-img" style="background-image:url('https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/11/17104734/How-to-Use-an-Automotive-Diagnostic-Tool-B-171121-1024x640.jpg')"></div>
-            <div class="card-content"><h3>DIAGNOSTICS</h3><p>ISTA • ODIS • VCDS</p></div>
+            <div class="card-content"><h3>ADVANCED DIAGNOSTICS</h3><p>ISTA • ODIS • VCDS • Autologic</p></div>
         </div>
         <div class="card">
-            <div class="card-img" style="background-image:url('data:image/webp;base64,UklGRo4UAABXRUJQVlA4IIIUAAAQVwCdASruALQAPp1EnEmlpCKhK3i7GLATiWcO6b3MS4KYBiD3Dgy22T58rTM95q/y1rMtfPV+wevd/X+CHaM7OZjCATwHprP5OxDHoe8x+8eoZ+vfpvf//3S/uv///dV/ar//nWbY1O/dj0r17o/nbFbWL/tfnaL+Do4qAoyUecpftSvhgS+8mKcQXQz+cxy/P5GkrMUQXdpI7ewCEbkl4560i/1kWAjSH3VGSuiJUEGhVuXm7+crZgPjGko1qnm4tP6X/9gL/9ssCNN+TTzafi1mcdveDdqtAfsJmr4kUpt39b4diXD/iTawabNQc1I33irSP/+1VsjE6JMfbgSzdYjEUVFP+46/sCB1Eg2eBdwwmpGXmZgCLf8wUb9hk5uiZGKwwPHHykLD61I7rdmRxN72QYvJlKlMz1EF7KJhNfStGWzqjMU7tqGOj/xMtgJzLWbQhynC+dqDrCz8Fje1Al8ERh0wtX3z1GxPXWQADH0jPkzOrTuyTdsdEwifuiqHRo2LzTmQT68zUvpjhAs7eBXgE4VTlvm4pO/xtGLdokhscLrbkUqJj3L44rLOXCzssWyZy3Cu+PfnVWzRO+cb8PyIbg++vO3tOJ9MJdMeWM3ONLx9YJWwpjwZaW6/BQy9KpO11D6xvFKlXMfzNZvXEvnPQJJy+zx+uwuJLaeqBVXv8kXi6Sov/Z0RdHuxDCyzXjbXeZzl1nECcOVYaVUy7kXMmZMknF92aiIDk0j56xJ7K+IUm7v/27bvzd9Tn94YPTvL3B3r22/QkIQaL6Hm0HEME/W+WfR+piQ3q1P4XOZEE1znewx8DnoQsn3dcmDGVxW86VJojjiQc9/6PasOhYy98AVG8NbC2vh1mU2YdLbGw9bWmxxFsEXkYxuvif2Tj1/5JsUG43kh0AKPWz10f/Q1q1VWj/glZY1q1Vn/iYAA/vv4bjxMHfcKvLpb5B5JVjjjH3XCt9L8YUpX8OpC0XmPNkQN3GGHx6LMcpaFn+uutsOv/c4hnCfoONQS4E4verd/yKirQSianZIDyj/WNkCiFIjb8Sw27PLy740iThChwW9+kb75/pyKFHuIwiWYFbNU+9wUKm/1POixzjpszsUQDR5TysD6aIpzrjffN6MKm7QfU87OXt1Zbev6s4xSh3xPqaDT578Gg56s8e74xv2gEKi6G+GM50Wc1JAcNGV1sxPfpuobdVEmuTyqnltwBjhipAhh3bSXzeYWBDNXcMc3MS8Di73bTDi6v/oEVO7z/IH8SsNPVdSRNroCjseSFUkGnrwoRul6+qxZAd934kcskp6jGuTwwzoCvJnM82EQV4bpfbHtVD0qe1oVxqY2sNJwKmaWDKoeE1cZopYVxy5UQUpnRtkbYxWEjOsSYNrQMVUSdlmEYMfohJqHfkGtUaTyp/6sw5zzNdhcwxOaHaveGpAQA5r7wHc1IUN5g418CoGkRnQY1+7IzZuWfFkkTiZwLcxwCB+lRana2LbtXdPTkEPuJ1iiiH9slvdGfn1+KjNXhTW+18VXKDXqjs3hGBcauJnREZXY0JoDYZsRyKlcLsLokjYbDyVJ8YKricj5XSoUQ1yyNmvTbWca7owSoNHACRiitpOVU/nSrxKqrhBIR7UqwyNrRJTeVTdocOkvvSpLaKdq5p2iGM6phx0gmfnTCnzi0LSZ/2G1n3LvQevU4sSgs5EU9BFGt+SwAu4CvsryvBQVb/S5zoEKhiNUK7+3WVLA6cmubXsYHSYXSDmAc55Pn31hNgEDbfX/82/LECi8SILZCN8SsniSJdw+JJioelV/KZLXExSdmOPdwV+/CZQeBEojNPKdxS8R4jvDDxil/wPstME5Qggc03KsSxDnqnBu9qli1dBQw/tdiWA+6ZeAJUzlsKE+vhXDResiBdyT8KLWVFo48ONU4H+5p+zKVUw18OqaXktYExZmcK68b2ed+ucbkzDXC5gPC4BT/VDbGbdEI0c/iTdywux3seRtf2iNFZcuv9MdmKelO+Txn3jONxsuiP5/g0nss5pe0vT60HU2ClJKmdsCzBDAo2C/4rqy3JKGQPc44oe5ps2Y0BSsDFCM5K1w90Ji844PHfxK27F05XM+9iwUk2S/D4WTjV+m8bnEhH1pf2TjwFP3jq0UsM3bRRS7n9bjgZvNoMiLAgKxb/pGDQ+NsTrgiXKcQBjPSQ/Nx3qr749M/CBoR9yjOMCQZ3PKC940BnHBH+GL2+ItMKYbbZpBgYDNOsmYxFAx5qy2mIBTMDCY94L8LLEXvaDBBc9OG89rz97w1Hm6pNMylONKMGXN/pG4si8vzEjSrvYtvEfUS6+5yNvQcgY8Ih3QrR6Qx/9iHVzhc0DYhDGEUJ1Q+x8a5rYA3z0/PpVmssFwMEfV9gTiS2hUD+Tb8EGwA8piK8xnm5RX+0hs3JgxFHRDEWJuZgVXipzaH/6nS5s83992Q3xoO6cB3KiyAX2Rbr8MfqwXcYu1J5WdoDaZTNCu05JyeZcSyinOpp31ych9+ICWAAXF9vls3sPkslMkmdDQLyJ3Lf/Fs4O0E0LkdvknDsBJA4yZuIyKd6g1CgeOcf3Y7XG3HanFwEv0CcsO2r7a1/1RieWG1pT9OmasE7CD0ZhZTkDa+oFpfdTh6s6Pa68ALWngxLuhMeqNuBMy9lluY4MjcX/IYJuC/E1T5n/PvmXo9shNv/v9nW+jQzhQ+dMPnIHR3xCb6tnREoTzOv0T9mVwx71VTPxgMgJLyjI/IvIRzvyc5BkHvsCCoJfT+eAPXRfpJonWYvhud/A+gStMeTHzEQZamxRvdVWsa6a28nH27Io75lHRvo+yf5a5C4SixgKw0zAV9Fy7nJvnH0R4MScSVEP8AZR3DCXewTXwEXrGFltGqJkUEnfRPNurpjeuCRBjE5OO40s4vzxsZURnt55rI8L7xFhDiSoPmYdXLMvAOZCI6BkcMYIapf3URcZw4oZffSGVnnvuY5wL7yzjyfBCZHXDY61jglsgrlESFvTRTt0UuBDTNtC5cD80wlW+lNsTT0Bspbe7f6NKXr2gDCSYzlxGtLGZSBjdsJQmsdVT+Xau4ztsIVRRqc3hOtbjLB7GXZK1WIUYHYs7C6jEJysZfdUMO2Tpa+hVawww0rudaQ016l/dzhd3cz1iQJQB9uC2GgQ6vE1d4NLHiguwf16mBekblVXJgYttCmWZVlDhfv2Ub1MYPJHpz3prQKWY7cunCi/k9dfQF1893jru5Y/lCdtvf2R0gJl8TFAO+1DvQO+2JXbJIMGFMFo/DnBsXxQH3j0xnfmxFBd1XIe0E7jDUJR4/poCP8A0jE71vAp08FLKgfWp9Ims+1TyL7deSDam2OcPoBc2pPcrsosRmo8QE171H4ucRMaX7Vp72o9IWaPJfXNzN+0afL8u0sMZfPm68S8Cim4XWFH955aHwcHbNGpZq68ooVVv5b8whThDvbZhGjoWzpHpR0MvgHk02uvKhinhci56hLoqlRViAnGeCW1qIs4UrttLetkOeMyS0RlLMDDqeMQjJlfLrQm14AMzuS3iPL28U2X8RmeFWy5IeqlLf7IMP3MOkSVcpFTexmaenQbHptuywIy6xeUK0VrRrfdG5GaQLLUeE4Exznrwy0y5Lq4kZUwehm4F/Vn9uZe7grouFmKuMQOUOaU7PM9WOmdjsOkd8jbPJwGcRkkAyzqvLeWdE5IGU5hvRKeFLGuKVQNOtjJ2qCH/b6EDpqBjL7k4J8C9+2gDc8/NJcRFUn7bITsglZ7dQFkJIqBGJBAtsLIfGWtJav/BB/+sz7wasAEwhdK3NQGUgjhRHH5dLmNIo/G/WWVFQawhR66Fd66pqF0iHigvQ9/q9TSCU/ixamKCYOGy8PoEDtVrJL6/7fSwxG7s3KNGn8V8oNSbU1NNPr6rKr6f3/fmyCqXPaAivzcSzMs8sBlHnxJjg1RQLhQjS3FtYIsWy9gNHgHP10oaC8hg+pa6v4eS7REiyD2tAvZoBZntdXcheDto4FxguhiXRe4HrT+jZOJxRW8kmV4fTpEyXHhyMnAWbW2UjRMGwOzwPNLDO1Vz1iBrXr4N6SY+cemvemEnjWux45Z8rVT9pp06j6xxUnAiz7PjRYHSBJPsJY9G3WZF2Nc9t6PndXnMgcTt0a2r1r0DsVSMicrF3DQMpkxt6IQ6BLtQMXGtHylMAWVPMvKnTC7i3fgWYY+IkFMkewiexi9k71Ob0FspfD9r0qynVVX4jCTg4cE0ndU9+NkgfsdF9A+t/B171NTtgbfnxbQVs3bWAMTSgnB0DI1AHOphnPXOwoNXLKKZRrwChrmQmcXYLKQ3WG5B/J7MPF6TVBqce9fTARSyXg/LHDChaOJTfiVZKeoRac9xQ57QneBQ5kWg+/IrNo4d1/xru+zdFH0lpS8N378DETMZ9m86OvNbEIn6K9TqZ+n+mtSYop2ejrTjc8YU1lgdYtbk2oqkETy8mHbpKY4XgkdZjm/tvDJ2SE6ZSLj5GmFxzjU8q02f73NDic3E2/aol+p7xxnJJw8zwjlfQLKmV4iYkyREnrM9H/CTXY9eyxiaG8rN9n87nT+BNQ/wKeRRFdGsHVLrShm5g+ow169xIfmx5o72EmfbJYpcrL7KCEb86yKYzYZucDY47OCrmQEB2DKDCbi8C8XLhpsk3ARJWMyc9pGOpzLMaOHF3RoeEzrcLEKndAtANXH6JI0kDhUTyQYgPrIy08UIT0/GnVQzQYkhlrBCj6Gg9aEkso0Tv3THg74BUvMZgzOZL/qmGF1xWD6GwEN1Un4fZFWkoxICppdO2kZnnovv76O5BHjj0vVd6AzK0Vg56OYMzcqFfe17POVjwuauydZhVXqljLwX/vNJeySo+niQWZ4zhCtLcwNnKizLiIiY10koTgYk9ixCTr/CGV5eryctuPU3OhkECwyvbdcv77JEOa/3LEDiyX0ux2EXjxKxWMG5sVIXLRHlo7sUjHPNKUwwzlxYtUrokidxTOL9vMX2rvtVUncCQoZ97LT1tcm2M/D1+lBtuBbHdu2cmFTu0OKoC8hacErV5jcCafWYzrH/okt7BOxlP8yO9c/Mp5fJcGfiJ6xCYNawLrMDobY/vdqb5fTFmsDjsU2D7yP/o7xVk6bjqVkEwH5fNQuPbKdkj3X9oJ935Sg6kgB1sJJSg6dMinzth6XhGYRSpUjlmDuuoSIydd2iPXmzugXsT3f1HSMyGe0+8n84XwBv6PnonnyjtbuOZKEdJX/yObu901KHITs822SDqHnGeqGdUsxMHJN3vtYOtDN/NFyqg85pTYIutqG7WQMHECkc/KeEWSsHkRP9zhbPbgGSgtzfA9GSSO9qKKRn4QxML76hMtqWhQAgqy/Bc7r9zqlURNXw8R/6oCmegisE6U2jXxcZdGqGeW+6Y3TYPAadwVYsXn9CYs/E1FSHE3PVRIJo4VZWlv+ACIj2eE1LqaL7SQYgyJucM13FoCAdAbnZVlYishNlusc3bpjCDy/WsD7ShXvSImpSwI90dssyqqsYAv2GL826T6DwVuFwaJjYmCeMJFTCKQPPe3S7zJg0vhnFYN5eq5IANawKIa0U1ab836IswuPdJNEvdcOYg9BxyS7UpzTBXrTYRnzrA78ipHbKrdwwxml/Oerlp1UNflJ1X8GFlQACAuMoTOOS19OwEEMYvmeGRxSkIem81FUBnFY8uUAepBk3iYEjNZCXt8xHfccCP0a5Ou7sFXXa/JuXI/xCndIN0EiQ0BPAoI4r9Eg0Y0QgIFD2uu16b0byDtaZ1j6ZZ9fHxfeUpf6pmTsLbbnWfgpwp5rdzPWBASoqvHmL5AHHqhG76HMLBEjCkSA1ocxHNWVP0j8Yrs9jvfi7sdZAZpXw66tY7lJuwjKlGkrtJE6GWbxpl7kvxp71RWqBkTi8Ekg/FtsJ8JuKasHTMzJV5oZh/ni1v9Sph6ogZ66YAW4fEg6fmzO+wHjeFZAJtfyaIz8XtjTJr1vClKKTSwEyWPx6ZipUgjInyT2rP+k4eeiQzypU/P4rEDMXypgClFCpELRIMdXuqKx9rXN6+KZyQWWlbVWUgv/qJ4j/iipxslSjdSz14PNACVAsjANEPOMDj4SPhglp56f3nt1MEpjfI/uwhLrmHt1ZvBnQtuc/CDX/FNe8bn+P+sXSkl0Bq+y4x3xo78ZRygRIM0M+/+s8DlZjl4MgtezlpfzUvtL1Ys6uTEZX2P2BjhRrqpx00RXVaqYlieQiq1kCbDmOE+HvTolyDYs0u7er2NyJs9SfmminH66KyuO51GiRYbBbGw6HLPp7+mMJZpDWUCjCfY2ABj15tZcsDbPIFY0YiUOqXD3oZzzGE1X278rg+QygNnrdcUiiH8E1pjxFxpc6K5YBn+FV90f+u2nviDmq10mNKzo7jVp0CXBtwbEs0Avbg2v2ppMLfeJ6vNN6Sw+jiGiAp5Z67u2AsxHXNhDbv1lga///OwnjD5RrCk0jTl4pLfNe5OBZoW2mYzDG4BCL4jcP5gxGAe+uiDgAM3dvmRyDJBD1i80xOHLlF7tytLz0bPndP5K+IxhQ9T7Gz1tq7fNB4rDYFoRV5vBjLH75g9GXr5DtKtKD4W+xSx/AxOsabbi/1I/Hu1OVYJHAwBOwfavhivOm5zaRHn0SxftpDCGmex3EpH50I38pjcQ+0+Kr60EX1nMHC8fkJicrHDnVhiJHA8VYaPHoD6L4fsi2Wc1e8y7Km/CMOTWjZ2a9BQ0NWpPXbYrGdlYbiBuUE099E9wvfYmSumQP2HsLe7zWfTnX/xh82tbs/YAcy54aLESf4PD6DaZpq+Ao4RzVxOY6Onb7qNqSoHoWXqQ1uGw6kGwhaw91Hvp9/Zlg+7ZHabUECvTnL7Ax+Uh2h43Xozt7TTyp462gpP+scuLiVFW88FxHIXw9b2neX1gkxluKdn/IDeNGouXDpCw1xsZpaLUMNEyBpP9vgwmQfJyO7fPmS7q16MImAmvsnOCM8DAr3AAAAAA=')"></div>
-            <div class="card-content"><h3>CELTIC CHIP TUNING</h3><p>Stage 1–3 Remaps</p></div>
+            <div class="card-img" style="background-image:url('https://i.postimg.cc/3xVJ7Z8F/celtic-tuning.jpg')"></div>
+            <div class="card-content"><h3>CELTIC PERFORMANCE TUNING</h3><p>Stage 1–3 • DPF/EGR Delete • Pop & Bang</p></div>
         </div>
     </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
+<section id="testimonials" style="background:rgba(20,26,46,0.96);padding:120px 20px;">
     <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
     <div class="review">
         <div class="stars">★★★★★</div>
-        <p>"Paul saved my 750i! It had misfires, rough idle and no one could fix it. He diagnosed it in 30 minutes, remapped it and now it runs smoother and stronger than when it left the showroom. Best mechanic in Pretoria – hands down!"</p>
+        <p>"Paul saved my 750i! Misfires gone in 30 minutes and now it's stronger than new. Best in Pretoria!"</p>
         <strong>— Christiaan Pienaar (BMW 750i)</strong>
     </div>
     <div class="review">
         <div class="stars">★★★★★</div>
-        <p>"Stage 2 on my Golf 8 R is insane! 360kW and still 100% reliable daily. Paul is the only guy I trust with my car. Highly recommended!"</p>
-        <strong>— Jacques van der Merwe (VW Golf 8 R)</strong>
+        <p>"Stage 2 Golf 8 R – 360kW and still 100% reliable. Paul is the only guy I trust!"</p>
+        <strong>— Jacques van der Merwe (Golf 8 R)</strong>
     </div>
     <div class="review">
         <div class="stars">★★★★★</div>
-        <p>"DPF delete + Stage 3 on RS3 8Y – absolutely transformed the car. Paul explained everything and delivered more than promised. 10/10 service!"</p>
+        <p>"DPF delete + Stage 3 RS3 8Y = transformed! More power than promised. 10/10"</p>
         <strong>— Ruan Pretorius (Audi RS3 8Y)</strong>
     </div>
 </section>
@@ -122,59 +124,63 @@
 <!-- TUNING TABLES -->
 <section id="tuning">
     <h2 class="section-title">CELTIC PERFORMANCE TUNING</h2>
-    <p style="text-align:center;font-size:1.3rem;max-width:900px;margin:0 auto 4rem;color:#b0c4ff;">
-        Official Celtic Tuning dealer • Safe, proven gains • 12-month engine warranty • Dyno verified
+    <p style="text-align:center;font-size:1.4rem;max-width:1000px;margin:0 auto 4rem;color:#b8c9ff;">
+        Official Celtic Tuning Dealer • 12-Month Engine Warranty • Dyno Verified Gains
     </p>
     <div class="tuning-grid">
-        <div class="tune-card"><h3>BMW M340i 3.0T</h3><p class="power">+95 kW | +160 Nm</p><p>Stage 1: 275 → <strong>370 kW</strong></p></div>
-        <div class="tune-card"><h3>VW Golf 8 R</h3><p class="power">+90 kW | +140 Nm</p><p>Stage 1: 235 → <strong>325 kW</strong></p></div>
-        <div class="tune-card"><h3>Audi RS3 8Y</h3><p class="power">+135 kW | +200 Nm</p><p>Stage 2: 294 → <strong>429 kW</strong></p></div>
-        <div class="tune-card"><h3>Mini JCW GP</h3><p class="power">+85 kW | +150 Nm</p><p>Stage 2: 225 → <strong>310 kW</strong></p></div>
+        <div class="tune-card"><h3>BMW M340i</h3><p class="power">+95 kW</p><p>275 → <strong>370 kW</strong></p></div>
+        <div class="tune-card"><h3>VW Golf 8 R</h3><p class="power">+90 kW</p><p>235 → <strong>325 kW</strong></p></div>
+        <div class="tune-card"><h3>Audi RS3 8Y</h3><p class="power">+135 kW</p><p>294 → <strong>429 kW</strong></p></div>
+        <div class="tune-card"><h3>Mini JCW GP</h3><p class="power">+85 kW</p><p>225 → <strong>310 kW</strong></p></div>
     </div>
 </section>
-<!-- GALLERY -->
+<!-- GALLERY – YOUR REAL WORK -->
 <section id="gallery">
     <h2 class="section-title">OUR WORK</h2>
     <div class="gallery-grid">
-        <div class="gallery-item" style="background-image:url('https://th.bing.com/th/id/R.2f9879a908e02a2cf8454adf67724eda?rik=GNxDH21Dwn84cQ&pid=ImgRaw&r=0')" onclick="openLightbox(0)"><div class="gallery-caption">Mini GP – Stage 2</div></div>
-        <!-- Add more images here if you have them -->
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/3xVJ7Z8F/celtic-tuning.jpg')" onclick="openLightbox(this)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/N0tQ8m2J/mini-gp-stage2.jpg')" onclick="openLightbox(this)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/85jW9K6P/golf8r-dyno.jpg')" onclick="openLightbox(this)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/9fW6vK3P/rs3-8y.jpg')" onclick="openLightbox(this)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/JnL3vK8P/m340i-tuning.jpg')" onclick="openLightbox(this)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/6qW5kL2P/workshop-bay.jpg')" onclick="openLightbox(this)"></div>
     </div>
 </section>
 
-<!-- BOOKING CALENDAR -->
+<!-- BOOKING FORM WITH CALENDAR -->
 <section id="booking">
     <h2 class="section-title">BOOK ONLINE</h2>
     <div class="form-wrapper">
         <form id="bookingForm" onsubmit="sendBooking(event)">
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" id="name" required placeholder="Your name">
+                <input type="text" id="name" required placeholder="Your full name">
             </div>
             <div class="form-group">
-                <label>Phone (WhatsApp)</label>
-                <input type="tel" id="phone" required placeholder="082 751 8458">
+                <label>WhatsApp Number</label>
+                <input type="tel" id="phone" required placeholder="e.g. 082 751 8458">
             </div>
             <div class="form-group">
-                <label>Vehicle Make & Model</label>
-                <input type="text" id="vehicle" required placeholder="e.g. BMW M340i">
+                <label>Vehicle</label>
+                <input type="text" id="vehicle" required placeholder="e.g. BMW M340i xDrive">
             </div>
             <div class="form-group">
-                <label>Service Required</label>
+                <label>Service Needed</label>
                 <select id="service" required>
-                    <option value="">Select service</option>
+                    <option value="">Choose service</option>
                     <option>Major Service</option>
                     <option>Minor Service</option>
                     <option>Diagnostics</option>
                     <option>Stage 1 Tune</option>
                     <option>Stage 2 Tune</option>
                     <option>Stage 3 Tune</option>
-                    <option>DPF / EGR Delete</option>
+                    <option>DPF/EGR Delete</option>
                     <option>Other</option>
                 </select>
             </div>
             <div class="form-group">
-                <label>Preferred Date</label>
-                <input type="text" class="flatpickr-input" id="date" placeholder="Click to select date" required>
+                <label>Preferred Date (Mon–Sat)</label>
+                <input type="text" class="flatpickr-input" id="date" placeholder="Click to pick date" required>
             </div>
             <button type="submit" class="submit-btn">SEND BOOKING VIA WHATSAPP</button>
         </form>
@@ -183,15 +189,13 @@
 <!-- LOCATION + GOOGLE MAPS -->
 <section id="location">
     <h2 class="section-title">FIND US</h2>
-    <p style="text-align:center;font-size:1.4rem;margin-bottom:2rem;">
+    <p style="text-align:center;font-size:1.5rem;margin-bottom:2.5rem;">
         513 Johan Heyns Drive, Gezina, Pretoria<br>
         <strong style="color:var(--accent);">Mon–Fri: 7:30–17:00 | Sat: 8:00–13:00</strong>
     </p>
     <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.362775223339!2d28.201847615032!3d-25.717348983645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560f7755b5d8d%3A0x7e2d8c7b9f3c4e2f!2s513%20Johan%20Heyns%20Dr%2C%20Gezina%2C%20Pretoria%2C%200084!5e0!3m2!1sen!2sza!4v1734000000000!5m2!1sen!2sza" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.362775223339!2d28.201847615032!3d-25.717348983645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560f7755b5d8d%3A0x7e2d8c7b9f3c4e2f!2s513%20Johan%20Heyns%20Dr%2C%20Gezina%2C%20Pretoria%2C%200084!5e0!3m2!1sen!2sza!4v1734000000000!5m2!1sen!2sza" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div style="text-align:center;margin-top:2rem;">
         <a href="https://maps.google.com/maps?daddr=-25.717348,28.201847" target="_blank" class="btn btn-call">Get Directions</a>
@@ -200,7 +204,7 @@
 
 <!-- FLOATING WHATSAPP -->
 <div class="wa-float">
-    <a href="https://wa.me/27827518458?text=Hi%20Paul%2C%20I%20saw%20your%20website%20and%20need%20a%20quote!" aria-label="WhatsApp">
+    <a href="https://wa.me/27827518458?text=Hi%20Paul%2C%20I%20found%20you%20online%20-%20please%20help!" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>
@@ -208,37 +212,29 @@
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-    // Calendar - no weekends
+    // Calendar – no Sundays
     flatpickr("#date", {
         dateFormat: "Y-m-d",
         minDate: "today",
-        disable: [
-            function(date) {
-                return (date.getDay() === 0 || date.getDay() === 6);
-            }
-        ],
-        locale: {
-            firstDayOfWeek: 1
-        }
+        disable: [function(date) { return (date.getDay() === 0 || date.getDay() === 6); }],
+        locale: { firstDayOfWeek: 1 }
     });
 
-    // Booking form → WhatsApp
+    // Send booking via WhatsApp
     function sendBooking(e) {
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const vehicle = document.getElementById('vehicle').value;
-        const service = document.getElementById('service').value;
-        const date = document.getElementById('date').value;
-
-        const message = `Hi Paul,%0A%0AI'd like to book:%0AName: ${name}%0APhone: ${phone}%0AVehicle: ${vehicle}%0AService: ${service}%0ADate: ${date}`;
-        window.open(`https://wa.me/27827518458?text=${message}`, '_blank');
+        const n = document.getElementById('name').value;
+        const p = document.getElementById('phone').value;
+        const v = document.getElementById('vehicle').value;
+        const s = document.getElementById('service').value;
+        const d = document.getElementById('date').value;
+        const msg = `Hi Paul,%0A%0ANEW BOOKING:%0AName: ${n}%0APhone: ${p}%0AVehicle: ${v}%0AService: ${s}%0ADate: ${d}`;
+        window.open(`https://wa.me/27827518458?text=${msg}`, '_blank');
     }
 
-    // Simple lightbox (gallery click)
-    function openLightbox(index) {
-        alert("Add your own lightbox or replace images with your real photos!");
-        // You can add a proper lightbox library later
+    // Simple gallery click (you can upgrade to full lightbox later)
+    function openLightbox(el) {
+        window.open(el.style.backgroundImage.slice(5, -2), "_blank");
     }
 </script>
 </body>
