@@ -3,239 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul's Mini Workshop - Vehicle Repairs in Pretoria | BMW Mini Audi VW Specialist</title>
-    <meta name="description" content="Paul's Mini Workshop - Vehicle Repairs in Pretoria. Official Celtic Tuning dealer. BMW, Mini, Audi & VW repairs, Stage 1-3 remaps, DPF delete. RMI & MIWA approved. Call 012 751 8458">
-    <meta name="keywords" content="pauls mini workshop,vehicle repairs pretoria,bmw repairs pretoria,mini specialist pretoria,celtic tuning pretoria,dpf delete pretoria,golf r tuning pretoria,audi rs3 tuning">
-    <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg">
+    <title>Paul's Mini Workshop - Vehicle Repairs in Pretoria | ECU Remapping & Cloning</title>
+    <meta name="description" content="Paul's Mini Workshop Pretoria - ECU Cloning, Remapping, Add Keys, All Keys Lost, Immo Off, TCU Cloning, Cluster Calibration & More. German Specialist. By Appointment Only. Call 012 751 8458">
+    <meta name="keywords" content="ecu cloning pretoria,ecu remapping pretoria,all keys lost pretoria,immo off pretoria,tcu cloning pretoria,pauls mini workshop">
+    <link rel="icon" href="https://i.postimg.cc/rs2ZxX8k/pauls-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
     <style>
         html{scroll-behavior:smooth;}
-        :root{--bg:#0a0e1a;--deep:#0f1629;--accent:#1e90ff;--text:#e0e7ff;}
+        :root{--bg:#0a0e1a;--accent:#00aaff;--text:#e0e7ff;}
         *{margin:0;padding:0;box-sizing:border-box;}
-        body{font-family:'Exo 2',sans-serif;background:var(--bg) url('https://img.freepik.com/premium-photo/internal-design-car-engine-blue-tone-black-background-free-space-right-side-text_67340-577.jpg') center/cover fixed;color:var(--text);line-height:1.6;}
-        .hero,section{position:relative;}
-        .hero::before,section::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.93);z-index:-1;}
-        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
-        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(3rem,11vw,6.5rem);color:white;text-shadow:0 0 50px rgba(30,144,255,0.7);margin:0;}
-        .hero .subtitle{font-size:clamp(1.4rem,5vw,2.2rem);color:var(--accent);font-weight:800;margin:10px 0 20px;}
-        .btn{display:inline-block;padding:18px 40px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.3rem;min-width:240px;text-decoration:none;transition:0.3s;box-shadow:0 8px 25px rgba(0,0,0,0.4);}
-        .btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1da851;transform:translateY(-5px);}
-        .btn-call{background:var(--accent);color:white;}.btn-call:hover{background:#4682b4;transform:translateY(-5px);}
-        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(15px);border-bottom:1px solid rgba(30,144,255,0.3);z-index:1000;}
-        .nav-container{max-width:1450px;margin:0 auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
-        .logo{display:flex;align-items:center;gap:14px;font-family:'Orbitron';font-size:2rem;color:white;text-shadow:0 0 20px var(--accent);}
-        .logo img{height:52px;width:auto;border-radius:10px;}
-        .logo-text{display:none;}
-        @media(min-width:969px){.logo-text{display:block;}}
-        .hamburger{display:block;font-size:2.4rem;color:white;cursor:pointer;}
-        .nav-menu{display:flex;gap:2.5rem;position:fixed;top:75px;left:0;width:100%;background:var(--deep);flex-direction:column;padding:2rem 0;transform:translateY(-200%);transition:0.5s;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+        body{font-family:'Exo 2',sans-serif;background:var(--bg) url('https://i.postimg.cc/3w9vLPLP/engine-bg.jpg') center/cover fixed;color:var(--text);}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;position:relative;}
+        .hero::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.92);z-index:1;}
+        .hero > div{position:relative;z-index:2;max-width:1100px;}
+        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(3.2rem,12vw,7rem);color:white;text-shadow:0 0 50px rgba(0,170,255,0.8);}
+        .hero .subtitle{font-size:2rem;color:var(--accent);font-weight:800;margin:15px 0 25px;}
+        .appointment-banner{background:#ff3b30;color:white;padding:12px;font-size:1.4rem;font-weight:bold;text-align:center;letter-spacing:1px;}
+        .btn{padding:18px 40px;margin:15px;border-radius:50px;font-weight:bold;font-size:1.3rem;min-width:260px;text-decoration:none;display:inline-block;transition:0.3s;}
+        .btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1da851;transform:scale(1.05);}
+        .btn-call{background:var(--accent);color:white;}.btn-call:hover{background:#0088cc;transform:scale(1.05);}
+        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(15px);z-index:1000;border-bottom:1px solid var(--accent);}
+        .nav-container{max-width:1450px;margin:auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
+        .logo img{height:56px;border-radius:12px;}
+        .logo-text{font-family:'Orbitron';font-size:2rem;color:white;margin-left:12px;}
+        .hamburger{font-size:2.4rem;color:white;cursor:pointer;}
+        .nav-menu{position:fixed;top:75px;left:0;width:100%;background:var(--bg);padding:2rem 0;transform:translateY(-100%);transition:0.4s;text-align:center;}
         .nav-menu.active{transform:translateY(0);}
-        .nav-menu a{color:var(--text);text-decoration:none;font-size:1.5rem;padding:1rem;text-align:center;font-weight:600;}
-        .nav-menu a:hover{color:var(--accent);}
-        section{padding:100px 20px;max-width:1450px;margin:0 auto;}
-        .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(2.8rem,9vw,5rem);text-align:center;color:white;margin-bottom:4rem;text-shadow:0 0 30px rgba(30,144,255,0.6);}
-        .wa-float a{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 10px 35px rgba(0,0,0,0.8);z-index:999;animation:pulse 2s infinite;}
-        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.8)}70%{box-shadow:0 0 0 20px transparent}}
-        @media(min-width:969px){.hamburger{display:none;}.nav-menu{position:static;transform:none;flex-direction:row;padding:0;background:none;box-shadow:none;}.nav-menu a{font-size:1.15rem;}}
+        .nav-menu a{color:white;font-size:1.5rem;margin:1rem;display:block;}
+        @media(min-width:969px){
+            .hamburger{display:none;}
+            .nav-menu{position:static;transform:none;display:flex;gap:3rem;background:none;padding:0;}
+            .nav-menu a{font-size:1.2rem;margin:0;}
+        }
+        .wa-float a{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.8rem;box-shadow:0 10px 30px rgba(0,0,0,0.8);z-index:999;}
     </style>
 </head>
 <body>
 
-<!-- HERO -->
+<div class="appointment-banner">WE WORK STRICTLY BY APPOINTMENT ONLY – BOOK BELOW OR WHATSAPP NOW</div>
+
 <section class="hero">
-    <div style="max-width:1100px;margin:0 auto;">
+    <div>
         <h1>Paul's Mini Workshop</h1>
         <div class="subtitle">Vehicle Repairs in Pretoria</div>
-        <p style="font-size:1.6rem;margin:2rem 0;">GERMAN CAR SPECIALIST • PRETORIA</p>
-        <p style="font-size:1.4rem;margin:1.5rem 0;">
-            Official Celtic Tuning Dealer • RMI • MIWA Approved • Since 2011<br>
-            <strong style="color:var(--accent);font-size:1.9rem;">012 751 8458 / 012 751 8459</strong>
-        </p>
-        <div style="margin-top:35px;">
-            <a href="https://wa.me/27827518458 class="btn btn-wa">WhatsApp Quote Now</a>
+        <p style="font-size:1.7rem;margin:2rem 0;">German Specialist • ECU Cloning • Remapping • All Keys Lost • Immo Off</p>
+        <p style="font-size:1.5rem;"><strong style="color:var(--accent);">012 751 8458 / 082 751 8458</strong></p>
+        <div style="margin-top:40px;">
+            <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp Now</a>
             <a href="tel:0127518458" class="btn btn-call">Call Workshop</a>
         </div>
     </div>
 </section>
 
-<!-- NAVIGATION -->
 <nav>
     <div class="nav-container">
-        <a href="#" class="logo">
-            <img src="https://static.wixstatic.com/media/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg" alt="Paul's Mini Workshop">
+        <a href="#" style="display:flex;align-items:center;">
+            <img src="https://i.postimg.cc/rs2ZxX8k/pauls-logo.png" alt="Paul's Mini Workshop">
             <span class="logo-text">Paul's Mini Workshop</span>
         </a>
-        <div class="hamburger" onclick="document.getElementById('navMenu').classList.toggle('active')">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="nav-menu" id="navMenu">
+        <div class="hamburger" onclick="document.querySelector('.nav-menu').classList.toggle('active')"><i class="fas fa-bars"></i></div>
+        <div class="nav-menu">
             <a href="#">Home</a>
             <a href="#services">Services</a>
-            <a href="#tuning">Tuning</a>
-            <a href="#testimonials">Reviews</a>
             <a href="#gallery">Gallery</a>
-            <a href="#booking">Book Online</a>
+            <a href="#booking">Book Appointment</a>
             <a href="#location">Location</a>
         </div>
     </div>
 </nav>
-<!-- SERVICES -->
-<section id="services">
-    <h2 class="section-title">SERVICES</h2>
-    <div class="grid">
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://th.bing.com/th/id/R.ac7bc8327b4f7894293a38c43aed1548?rik=cIJlEGd2VPdE5g&pid=ImgRaw&r=0')"></div>
-            <div class="card-content"><h3>MAJOR & MINOR SERVICES</h3><p>All German Vehicles • Full Diagnostics Included</p></div>
-        </div>
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/11/17104734/How-to-Use-an-Automotive-Diagnostic-Tool-B-171121-1024x640.jpg')"></div>
-            <div class="card-content"><h3>ADVANCED DIAGNOSTICS</h3><p>ISTA • ODIS • VCDS • Autologic</p></div>
-        </div>
-        <div class="card">
-            <div class="card-img" style="background-image:url('https://i.postimg.cc/3xVJ7Z8F/celtic-tuning.jpg')"></div>
-            <div class="card-content"><h3>CELTIC PERFORMANCE TUNING</h3><p>Stage 1–3 • DPF/EGR Delete • Pop & Bang</p></div>
-        </div>
+    <section id="services" style="padding:120px 20px;background:rgba(15,22,41,0.95);">
+    <h2 style="font-family:'Orbitron';font-size:4rem;text-align:center;color:white;margin-bottom:4rem;text-shadow:0 0 30px var(--accent);">OUR SERVICES</h2>
+    <div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:2rem;font-size:1.4rem;line-height:2.2;">
+        <ul style="list-style:none;">
+            <li>ECU Cloning & Remapping</li>
+            <li>Add Keys / All Keys Lost</li>
+            <li>Immo Off & Immo Bypass</li>
+            <li>Cluster Calibration & Mileage Correction</li>
+            <li>Software Updates & Coding</li>
+            <li>TCU Cloning</li>
+        </ul>
+        <ul style="list-style:none;">
+            <li>TCU Immo Off</li>
+            <li>Used ECU / Module Matching</li>
+            <li>Used Module Calibration</li>
+            <li>DPF / EGR / AdBlue Delete</li>
+            <li>Electrical & Mechanical Repairs</li>
+            <li>Full Diagnostics (BMW • Mini • Audi • VW)</li>
+        </ul>
     </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" style="background:rgba(20,26,46,0.96);padding:120px 20px;">
-    <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
-    <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>"Paul saved my 750i! Misfires gone in 30 minutes and now it's stronger than new. Best in Pretoria!"</p>
-        <strong>— Christiaan Pienaar (BMW 750i)</strong>
-    </div>
-    <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>"Stage 2 Golf 8 R – 360kW and still 100% reliable. Paul is the only guy I trust!"</p>
-        <strong>— Jacques van der Merwe (Golf 8 R)</strong>
-    </div>
-    <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>"DPF delete + Stage 3 RS3 8Y = transformed! More power than promised. 10/10"</p>
-        <strong>— Ruan Pretorius (Audi RS3 8Y)</strong>
-    </div>
-</section>
-
-<!-- TUNING TABLES -->
-<section id="tuning">
-    <h2 class="section-title">CELTIC PERFORMANCE TUNING</h2>
-    <p style="text-align:center;font-size:1.4rem;max-width:1000px;margin:0 auto 4rem;color:#b8c9ff;">
-        Official Celtic Tuning Dealer • 12-Month Engine Warranty • Dyno Verified Gains
+    <p style="text-align:center;margin-top:4rem;font-size:2rem;color:#ff3b30;font-weight:bold;">
+        WE WORK STRICTLY BY APPOINTMENT ONLY
     </p>
-    <div class="tuning-grid">
-        <div class="tune-card"><h3>BMW M340i</h3><p class="power">+95 kW</p><p>275 → <strong>370 kW</strong></p></div>
-        <div class="tune-card"><h3>VW Golf 8 R</h3><p class="power">+90 kW</p><p>235 → <strong>325 kW</strong></p></div>
-        <div class="tune-card"><h3>Audi RS3 8Y</h3><p class="power">+135 kW</p><p>294 → <strong>429 kW</strong></p></div>
-        <div class="tune-card"><h3>Mini JCW GP</h3><p class="power">+85 kW</p><p>225 → <strong>310 kW</strong></p></div>
-    </div>
 </section>
-<!-- GALLERY – YOUR REAL WORK -->
-<section id="gallery">
-    <h2 class="section-title">OUR WORK</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/3xVJ7Z8F/celtic-tuning.jpg')" onclick="openLightbox(this)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/N0tQ8m2J/mini-gp-stage2.jpg')" onclick="openLightbox(this)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/85jW9K6P/golf8r-dyno.jpg')" onclick="openLightbox(this)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/9fW6vK3P/rs3-8y.jpg')" onclick="openLightbox(this)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/JnL3vK8P/m340i-tuning.jpg')" onclick="openLightbox(this)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.postimg.cc/6qW5kL2P/workshop-bay.jpg')" onclick="openLightbox(this)"></div>
+<section id="gallery" style="padding:100px 20px;">
+    <h2 style="font-family:'Orbitron';font-size:4.5rem;text-align:center;color:white;margin-bottom:4rem;text-shadow:0 0 30px var(--accent);">OUR WORK</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;max-width:1400px;margin:auto;">
+        <div style="background:url('https://i.postimg.cc/3xVJ7Z8F/celtic-tuning.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
+        <div style="background:url('https://i.postimg.cc/N0tQ8m2J/mini-gp-stage2.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
+        <div style="background:url('https://i.postimg.cc/85jW9K6P/golf8r-dyno.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
+        <div style="background:url('https://i.postimg.cc/9fW6vK3P/rs3-8y.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
+        <div style="background:url('https://i.postimg.cc/JnL3vK8P/m340i-tuning.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
+        <div style="background:url('https://i.postimg.cc/6qW5kL2P/workshop-bay.jpg') center/cover;border-radius:20px;height:300px;box-shadow:0 10px 30px rgba(0,170,255,0.4);"></div>
     </div>
 </section>
 
-<!-- BOOKING FORM WITH CALENDAR -->
-<section id="booking">
-    <h2 class="section-title">BOOK ONLINE</h2>
-    <div class="form-wrapper">
-        <form id="bookingForm" onsubmit="sendBooking(event)">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" id="name" required placeholder="Your full name">
-            </div>
-            <div class="form-group">
-                <label>WhatsApp Number</label>
-                <input type="tel" id="phone" required placeholder="e.g. 082 751 8458">
-            </div>
-            <div class="form-group">
-                <label>Vehicle</label>
-                <input type="text" id="vehicle" required placeholder="e.g. BMW M340i xDrive">
-            </div>
-            <div class="form-group">
-                <label>Service Needed</label>
-                <select id="service" required>
-                    <option value="">Choose service</option>
-                    <option>Major Service</option>
-                    <option>Minor Service</option>
-                    <option>Diagnostics</option>
-                    <option>Stage 1 Tune</option>
-                    <option>Stage 2 Tune</option>
-                    <option>Stage 3 Tune</option>
-                    <option>DPF/EGR Delete</option>
-                    <option>Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Preferred Date (Mon–Sat)</label>
-                <input type="text" class="flatpickr-input" id="date" placeholder="Click to pick date" required>
-            </div>
-            <button type="submit" class="submit-btn">SEND BOOKING VIA WHATSAPP</button>
+<section id="booking" style="padding:120px 20px;background:rgba(15,22,41,0.95);">
+    <h2 style="font-family:'Orbitron';font-size:4.5rem;text-align:center;color:white;margin-bottom:2rem;">BOOK YOUR APPOINTMENT</h2>
+    <p style="text-align:center;font-size:1.8rem;color:#ff3b30;margin-bottom:3rem;">We only work by appointment – book now!</p>
+    <div style="max-width:700px;margin:auto;background:rgba(20,26,46,0.98);padding:3rem;border-radius:25px;border:3px solid var(--accent);">
+        <form onsubmit="event.preventDefault();window.open('https://wa.me/27827518458?text='+encodeURIComponent('Hi Paul,\nI need an appointment:\nName: ' + document.getElementById('bname').value + '\nPhone: ' + document.getElementById('bphone').value + '\nVehicle: ' + document.getElementById('bcar').value + '\nService: ' + document.getElementById('bservice').value + '\nDate: ' + document.getElementById('bdate').value))">
+            <input type="text" id="bname" placeholder="Your Name" required style="width:100%;padding:15px;margin:10px 0;border-radius:12px;border:none;background:#111;color:white;font-size:1.2rem;">
+            <input type="tel" id="bphone" placeholder="WhatsApp Number" required style="width:100%;padding:15px;margin:10px 0;border-radius:12px;border:none;background:#111;color:white;font-size:1.2rem;">
+            <input type="text" id="bcar" placeholder="Vehicle Make & Model" required style="width:100%;padding:15px;margin:10px 0;border-radius:12px;border:none;background:#111;color:white;font-size:1.2rem;">
+            <input type="text" id="bservice" placeholder="Service Needed (e.g. ECU Clone, All Keys Lost)" required style="width:100%;padding:15px;margin:10px 0;border-radius:12px;border:none;background:#111;color:white;font-size:1.2rem;">
+            <input type="text" id="bdate" class="flatpickr" placeholder="Preferred Date (Mon–Sat)" required style="width:100%;padding:15px;margin:10px 0;border-radius:12px;border:none;background:#111;color:white;font-size:1.2rem;">
+            <button type="submit" style="width:100%;padding:18px;background:var(--accent);color:white;border:none;border-radius:50px;font-size:1.5rem;font-weight:bold;margin-top:20px;cursor:pointer;">BOOK VIA WHATSAPP</button>
         </form>
     </div>
 </section>
-<!-- LOCATION + GOOGLE MAPS -->
-<section id="location">
-    <h2 class="section-title">FIND US</h2>
-    <p style="text-align:center;font-size:1.5rem;margin-bottom:2.5rem;">
+<section id="location" style="padding:120px 20px;">
+    <h2 style="font-family:'Orbitron';font-size:4.5rem;text-align:center;color:white;margin-bottom:3rem;">FIND US</h2>
+    <p style="text-align:center;font-size:1.6rem;margin-bottom:3rem;">
         513 Johan Heyns Drive, Gezina, Pretoria<br>
-        <strong style="color:var(--accent);">Mon–Fri: 7:30–17:00 | Sat: 8:00–13:00</strong>
+        <strong style="color:var(--accent);">Mon–Fri 7:30–17:00 | Sat 8:00–13:00</strong>
     </p>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.362775223339!2d28.201847615032!3d-25.717348983645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560f7755b5d8d%3A0x7e2d8c7b9f3c4e2f!2s513%20Johan%20Heyns%20Dr%2C%20Gezina%2C%20Pretoria%2C%200084!5e0!3m2!1sen!2sza!4v1734000000000!5m2!1sen!2sza" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div style="text-align:center;margin-top:2rem;">
-        <a href="https://maps.google.com/maps?daddr=-25.717348,28.201847" target="_blank" class="btn btn-call">Get Directions</a>
+    <div style="max-width:1100px;margin:auto;border-radius:25px;overflow:hidden;box-shadow:0 15px 50px rgba(0,170,255,0.5);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.362775223339!2d28.201847615032!3d-25.717348983645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560f7755b5d8d%3A0x7e2d8c7b9f3c4e2f!2s513%20Johan%20Heyns%20Dr%2C%20Gezina%2C%20Pretoria%2C%200084!5e0!3m2!1sen!2sza!4v1734000000000!5m2!1sen!2sza"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </section>
 
-<!-- FLOATING WHATSAPP -->
 <div class="wa-float">
-    <a href="https://wa.me/27827518458?text=Hi%20Paul%2C%20I%20found%20you%20online%20-%20please%20help!" aria-label="WhatsApp">
+    <a href="https://wa.me/27827518458?text=Hi%20Paul%2C%20I%20need%20to%20book%20an%20appointment!">
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>
 
-<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-    // Calendar – no Sundays
-    flatpickr("#date", {
+    flatpickr(".flatpickr", {
         dateFormat: "Y-m-d",
         minDate: "today",
         disable: [function(date) { return (date.getDay() === 0 || date.getDay() === 6); }],
         locale: { firstDayOfWeek: 1 }
     });
-
-    // Send booking via WhatsApp
-    function sendBooking(e) {
-        e.preventDefault();
-        const n = document.getElementById('name').value;
-        const p = document.getElementById('phone').value;
-        const v = document.getElementById('vehicle').value;
-        const s = document.getElementById('service').value;
-        const d = document.getElementById('date').value;
-        const msg = `Hi Paul,%0A%0ANEW BOOKING:%0AName: ${n}%0APhone: ${p}%0AVehicle: ${v}%0AService: ${s}%0ADate: ${d}`;
-        window.open(`https://wa.me/27827518458?text=${msg}`, '_blank');
-    }
-
-    // Simple gallery click (you can upgrade to full lightbox later)
-    function openLightbox(el) {
-        window.open(el.style.backgroundImage.slice(5, -2), "_blank");
-    }
 </script>
 </body>
 </html>
