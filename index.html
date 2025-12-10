@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul's Mini Workshop - ECU Remapping & Cloning Pretoria | German Specialist</title>
+    <title>Paul's Mini Workshop - ECU Remapping & Cloning Pretoria</title>
     <meta name="description" content="Paul's Mini Workshop Pretoria - ECU Cloning, Remapping, All Keys Lost, Immo Off, TCU Cloning, Cluster Calibration & More. German Vehicle Specialist. By Appointment Only. Call 012 751 8458">
     <meta name="keywords" content="ecu cloning pretoria,ecu remapping pretoria,all keys lost pretoria,immo off pretoria,tcu cloning pretoria,pauls mini workshop">
     <link rel="icon" href="https://static.wixstatic.com/media/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/380ef9_664f4abec6a1432d8487502991322fff~mv2.jpeg">
@@ -19,104 +18,151 @@
             --text: #e0e7ff;
             --red: #ff3b30;
             --green: #25D366;
-            --card-bg: rgba(20,26,46,0.98);
-            --shadow: rgba(0,170,255,0.2);
+            --card-bg: rgba(15,20,36,0.95);
+            --shadow: rgba(0,170,255,0.3);
         }
         body.light {
-            --bg: #f0f0f0;
-            --text: #333;
-            --card-bg: #fff;
-            --shadow: rgba(0,0,0,0.1);
+            --bg: #f8f9fa;
+            --text: #222;
+            --card-bg: rgba(255,255,255,0.95);
+            --shadow: rgba(0,0,0,0.15);
             --accent: #007acc;
         }
         *{margin:0;padding:0;box-sizing:border-box;}
         html{scroll-behavior:smooth;}
-        body{font-family:'Exo 2',sans-serif;background:var(--bg) url('https://img.freepik.com/premium-photo/internal-design-car-engine-blue-tone-black-background-free-space-right-side-text_67340-577.jpg') center/cover fixed;color:var(--text);line-height:1.6;transition: background 0.3s, color 0.3s;}
-        body.light {background: var(--bg);}
-        
-        .appointment-banner{background:var(--red);color:white;padding:14px 0;font-size:1.4rem;font-weight:bold;text-align:center;letter-spacing:1px;position:relative;z-index:10;}
-        
-        nav{position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);backdrop-filter:blur(15px);border-bottom:2px solid var(--accent);z-index:1000;transition: background 0.3s;}
-        body.light nav {background: rgba(255,255,255,0.98); border-bottom:2px solid var(--accent);}
+        body{
+            font-family:'Exo 2',sans-serif;
+            background: var(--bg) url('https://wallpapercave.com/wp/wp1840558.jpg') center/cover fixed;
+            color:var(--text);
+            line-height:1.6;
+            transition:background 0.4s, color 0.4s;
+        }
+        body.light {background: var(--bg) url('https://wallpapercave.com/wp/wp1840558.jpg') center/cover fixed;}
+
+        .appointment-banner{
+            background:var(--red);color:white;padding:14px 0;font-size:1.45rem;font-weight:bold;
+            text-align:center;letter-spacing:1px;position:relative;z-index:10;
+        }
+
+        nav{
+            position:fixed;top:0;width:100%;background:rgba(10,14,26,0.98);
+            backdrop-filter:blur(15px);border-bottom:3px solid var(--accent);z-index:1000;
+        }
+        body.light nav{background:rgba(255,255,255,0.98);border-color:var(--accent);}
         .nav-container{max-width:1450px;margin:auto;padding:1rem 20px;display:flex;justify-content:space-between;align-items:center;}
-        .logo{display:flex;align-items:center;}
-        .logo img{height:60px;border-radius:12px;}
-        .logo-text{font-family:'Orbitron';font-size:2rem;color:white;margin-left:12px;}
-        body.light .logo-text {color: #333;}
-        .hamburger{font-size:2.4rem;color:var(--text);cursor:pointer;display:none;}
-        .nav-menu{display:flex;gap:3rem;align-items:center;}
-        .nav-menu a{color:var(--text);font-size:1.3rem;text-decoration:none;transition:0.3s;}
+        .logo img{height:62px;border-radius:12px;}
+        .logo-text{font-family:'Orbitron';font-size:2.1rem;color:white;margin-left:12px;}
+        body.light .logo-text{color:#111;}
+        .hamburger{font-size:2.5rem;color:var(--text);cursor:pointer;display:none;}
+        .nav-menu{display:flex;gap:2.8rem;align-items:center;}
+        .nav-menu a{color:var(--text);font-size:1.35rem;text-decoration:none;transition:0.3s;}
         .nav-menu a:hover{color:var(--accent);}
-        
-        .theme-toggle {background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; margin-left: 20px;}
-        
+        .theme-toggle{
+            background:none;border:none;color:var(--text);font-size:1.7rem;cursor:pointer;margin-left:15px;
+        }
+
         .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;position:relative;}
-        .hero::before{content:'';position:absolute;inset:0;background:rgba(10,14,26,0.92);}
-        body.light .hero::before {background: rgba(255,255,255,0.92);}
+        .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.65);}
+        body.light .hero::before{background:rgba(0,0,0,0.45);}
         .hero > div{position:relative;z-index:2;max-width:1100px;}
-        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(3rem,10vw,7rem);color:var(--text);text-shadow:0 0 50px var(--shadow);}
-        .hero .subtitle{font-size:2rem;color:var(--accent);font-weight:800;margin:20px 0;}
-        .hero p{font-size:1.6rem;margin:2rem 0;}
-        .phone{color:var(--accent);font-size:2rem;font-weight:bold;}
-        
-        .btn{padding:18px 40px;margin:10px;border-radius:50px;font-weight:bold;font-size:1.4rem;min-width:260px;text-decoration:none;display:inline-block;transition:0.3s;}
+        .hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(3.5rem,11vw,8rem);color:white;
+            text-shadow:0 0 60px rgba(0,170,255,0.9);letter-spacing:3px;}
+        .hero .subtitle{font-size:2.3rem;color:var(--accent);font-weight:800;margin:20px 0;}
+        .hero p{font-size:1.7rem;margin:2rem 0;}
+        .phone{color:var(--accent);font-size:2.1rem;font-weight:bold;}
+
+        .btn{
+            padding:20px 50px;margin:12px;border-radius:50px;font-weight:bold;font-size:1.5rem;
+            min-width:280px;text-decoration:none;display:inline-block;transition:0.3s;
+            box-shadow:0 12px 30px rgba(0,0,0,0.5);
+        }
         .btn-wa{background:var(--green);color:white;}
-        .btn-wa:hover{background:#1da851;transform:scale(1.05);}
+        .btn-wa:hover{background:#1da851;transform:scale(1.06);}
         .btn-call{background:var(--accent);color:white;}
-        .btn-call:hover{background:#0088cc;transform:scale(1.05);}
-        
-        .wa-float a{position:fixed;bottom:25px;right:25px;background:var(--green);color:white;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:3rem;box-shadow:0 10px 40px rgba(0,0,0,0.7);z-index:999;animation:pulse 2s infinite;}
-        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 20px transparent}}
-        
-        section{padding:100px 20px;}
-        h2{font-family:'Orbitron';font-size:4.5rem;text-align:center;color:var(--text);margin-bottom:4rem;text-shadow:0 0 40px var(--shadow);}
-        
-        .services-grid{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;}
-        .service-card{background:var(--card-bg);border:2px solid var(--accent);border-radius:20px;overflow:hidden;box-shadow:0 15px 40px var(--shadow);transition: background 0.3s;}
-        .service-card img{width:100%;height:260px;object-fit:cover;}
-        .service-card h3{color:var(--accent);font-size:2rem;padding:1.5rem;text-align:center;}
-        .service-card p{color:var(--text);text-align:center;padding:0 1.5rem 1.5rem;}
-        
-        .gallery-grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
-        .gallery-item{height:320px;background-size:cover;background-position:center;border-radius:20px;box-shadow:0 15px 40px var(--shadow);cursor:pointer;transition:0.4s;}
-        .gallery-item:hover{transform:scale(1.03);}
-        
-        .testimonials-grid{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;}
-        .testimonial-card{background:var(--card-bg);border:2px solid var(--accent);border-radius:20px;padding:2rem;text-align:center;box-shadow:0 15px 40px var(--shadow);transition: background 0.3s;}
-        .testimonial-avatar{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:1rem;}
-        .testimonial-quote{font-style:italic;margin-bottom:1rem;color:var(--text);}
-        .testimonial-name{font-weight:bold;color:var(--accent);}
-        
-        .form-wrapper{max-width:700px;margin:auto;background:var(--card-bg);padding:3rem;border-radius:20px;border:2px solid var(--accent);transition: background 0.3s;}
-        .form-group{margin-bottom:1.5rem;}
-        .form-group label{display:block;margin-bottom:8px;color:var(--accent);font-weight:600;}
-        .form-group input,.form-group select,.form-group textarea{width:100%;padding:14px;border-radius:12px;border:1px solid var(--accent);background:rgba(255,255,255,0.1);color:var(--text);font-size:1.1rem;transition: background 0.3s, color 0.3s;}
-        body.light .form-group input, body.light .form-group select, body.light .form-group textarea {background: rgba(0,0,0,0.05);}
-        .submit-btn{width:100%;background:var(--green);color:white;padding:18px;border:none;border-radius:50px;font-size:1.5rem;font-weight:bold;cursor:pointer;margin-top:1rem;transition:0.3s;}
-        .submit-btn:hover{background:#1da851;transform:scale(1.02);}
-        
-        .map-container iframe{width:100%;height:500px;border-radius:20px;border:2px solid var(--accent);}
-        
-        .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.95);display:none;align-items:center;justify-content:center;z-index:9999;}
+        .btn-call:hover{background:#0088cc;transform:scale(1.06);}
+
+        .wa-float a{
+            position:fixed;bottom:30px;right:30px;background:var(--green);color:white;
+            width:75px;height:75px;border-radius:50%;display:flex;align-items:center;
+            justify-content:center;font-size:3.2rem;box-shadow:0 10px 40px rgba(0,0,0,0.7);
+            z-index:999;animation:pulse 2s infinite;
+        }
+        @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 22px transparent}}
+
+        section{padding:120px 20px;}
+        h2{
+            font-family:'Orbitron';font-size:5rem;text-align:center;color:var(--text);
+            margin-bottom:5rem;text-shadow:0 0 50px var(--shadow);
+        }
+
+        .services-grid,.gallery-grid,.testimonials-grid{
+            max-width:1400px;margin:auto;display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2.2rem;
+        }
+        .service-card,.testimonial-card{
+            background:var(--card-bg);border:2px solid var(--accent);border-radius:22px;
+            overflow:hidden;box-shadow:0 15px 45px var(--shadow);transition:0.4s;
+        }
+        .service-card:hover,.testimonial-card:hover{transform:translateY(-12px);}
+        .service-card img{width:100%;height:280px;object-fit:cover;}
+        .service-card h3,.testimonial-card h3{color:var(--accent);font-size:2rem;padding:1.8rem 1rem 0.8rem;text-align:center;}
+        .service-card p,.testimonial-quote{padding:0 2rem 2rem;text-align:center;color:var(--text);font-size:1.15rem;}
+        .testimonial-avatar{
+            width:110px;height:110px;border-radius:50%;object-fit:cover;margin:1rem auto 1.2rem;
+            border:4px solid var(--accent);
+        }
+        .testimonial-name{font-weight:bold;color:var(--accent);margin-top:1rem;}
+
+        .gallery-item{
+            height:360px;background-size:cover;background-position:center;border-radius:22px;
+            box-shadow:0 15px 40px var(--shadow);cursor:pointer;transition:0.4s;
+        }
+        .gallery-item:hover{transform:scale(1.05);}
+
+        .form-wrapper{
+            max-width:750px;margin:auto;background:var(--card-bg);padding:3.5rem;
+            border-radius:24px;border:2px solid var(--accent);box-shadow:0 20px 50px var(--shadow);
+        }
+        .form-group label{display:block;margin-bottom:10px;color:var(--accent);font-weight:600;font-size:1.2rem;}
+        .form-group input,.form-group select,.form-group textarea{
+            width:100%;padding:16px;border-radius:14px;border:1px solid var(--accent);
+            background:rgba(255,255,255,0.08);color:var(--text);font-size:1.1rem;
+        }
+        body.light .form-group input,body.light .form-group select,body.light .form-group textarea{background:rgba(0,0,0,0.06);}
+        .submit-btn{
+            width:100%;background:var(--green);color:white;padding:18px;border:none;
+            border-radius:50px;font-size:1.6rem;font-weight:bold;cursor:pointer;
+            margin-top:1.5rem;transition:0.3s;
+        }
+        .submit-btn:hover{background:#1da851;transform:scale(1.03);}
+
+        .map-container iframe{width:100%;height:520px;border-radius:24px;border:3px solid var(--accent);}
+
+        .lightbox{
+            position:fixed;inset:0;background:rgba(0,0,0,0.96);display:none;
+            align-items:center;justify-content:center;z-index:9999;
+        }
         .lightbox.active{display:flex;}
-        .lightbox img{max-width:90%;max-height:90vh;border-radius:15px;}
-        .close-lightbox{position:absolute;top:20px;right:30px;font-size:3rem;color:white;cursor:pointer;}
-        .nav-arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:4rem;color:white;opacity:0.7;cursor:pointer;}
-        .prev{left:30px;}.next{right:30px;}
-        
+        .lightbox img{max-width:92%;max-height:92vh;border-radius:18px;box-shadow:0 0 60px rgba(0,170,255,0.6);}
+        .close-lightbox{top:25px;right:35px;font-size:3.5rem;color:white;cursor:pointer;}
+        .nav-arrow{top:50%;font-size:4.5rem;color:white;opacity:0.8;cursor:pointer;}
+        .prev{left:35px;}.next{right:35px;}
+
         @media(max-width:968px){
             .hamburger{display:block;}
-            .nav-menu{position:fixed;top:78px;left:0;width:100%;background:var(--bg);flex-direction:column;padding:2rem 0;transform:translateY(-100%);transition:0.4s;}
+            .nav-menu{
+                position:fixed;top:82px;left:0;width:100%;background:var(--bg);
+                flex-direction:column;padding:3rem 0;transform:translateY(-100%);transition:0.4s;
+            }
             .nav-menu.active{transform:translateY(0);}
-            .nav-menu a{font-size:1.8rem;padding:1rem;}
-            .nav-menu .theme-toggle {margin-left: 0;}
+            .nav-menu a{font-size:1.9rem;padding:1.2rem;}
         }
     </style>
 </head>
 <body>
 
 <div class="appointment-banner">
-    WE WORK STRICTLY BY APPOINTMENT ONLY – BOOK VIA WHATSAPP OR FORM BELOW
+    WE WORK STRICTLY BY APPOINTMENT ONLY – BOOK VIA WHATSAPP OR USE THE FORM BELOW
 </div>
 
 <nav>
@@ -126,7 +172,7 @@
             <span class="logo-text">Paul's Mini Workshop</span>
         </a>
         <div class="hamburger" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
-            <i class="fas fa-bars"></i>
+            Menu
         </div>
         <div class="nav-menu">
             <a href="#home">Home</a>
@@ -135,7 +181,7 @@
             <a href="#testimonials">Testimonials</a>
             <a href="#booking">Book</a>
             <a href="#location">Location</a>
-            <button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+            <button class="theme-toggle" onclick="toggleTheme()">Moon Icon</button>
         </div>
     </div>
 </nav>
@@ -144,7 +190,9 @@
     <div>
         <h1>PAUL'S MINI WORKSHOP</h1>
         <div class="subtitle">German Vehicle Specialist • Pretoria</div>
-        <p>ECU Cloning • Remapping • All Keys Lost • Immo Off • TCU Cloning • Cluster Calibration</p>
+        <p style="font-size:1.9rem;margin:2.5rem 0;">
+            ECU Cloning • Remapping • All Keys Lost • Immo Off • TCU Cloning • Cluster Calibration
+        </p>
         <p class="phone">012 751 8458 / 082 751 8458</p>
         <div>
             <a href="https://wa.me/27827518458" class="btn btn-wa">WhatsApp Now</a>
@@ -157,19 +205,19 @@
     <h2>OUR SERVICES</h2>
     <div class="services-grid">
         <div class="service-card">
-            <img src="https://www.familyhandyman.com/wp-content/uploads/2023/09/Car-Diagnostic-Scanner_SDS50_Lifestyle_FT.jpg" alt="Diagnostics">
+            <img src="https://www.autointhebox.com/images/blog/diagnostic-tool.jpg" alt="Diagnostics">
             <h3>ADVANCED DIAGNOSTICS</h3>
-            <p>ISTA • ODIS • VCDS • Dealer-level tools</p>
+            <p>ISTA • ODIS • VCDS • Full Dealer-Level Tools</p>
         </div>
         <div class="service-card">
             <img src="https://c8.alamy.com/comp/F4N55P/a-car-mechanic-is-repairing-a-german-bmw-car-in-a-garage-in-the-suburb-F4N55P.jpg" alt="Repairs">
-            <h3>MECHANICAL REPAIRS</h3>
+            <h3>MECHANICAL & ELECTRICAL REPAIRS</h3>
             <p>Major & minor services – German specialist</p>
         </div>
         <div class="service-card">
             <img src="https://carwow-uk-wp-3.imgix.net/engine-remapping-lead.png" alt="Tuning">
             <h3>CELTIC CHIP TUNING</h3>
-            <p>Official Dealer • Stage 1–3 • DPF/EGR/AdBlue</p>
+            <p>Official Dealer • Stage 1–3 • DPF/EGR/AdBlue Solutions</p>
         </div>
     </div>
 </section>
@@ -178,9 +226,11 @@
     <h2>OUR WORK</h2>
     <div class="gallery-grid">
         <div class="gallery-item" style="background-image:url('https://cdn.motor1.com/images/mgl/WmYMq/s1/2021-bmw-m4-coupe-dyno-test-by-ind-distribution.webp')" onclick="openLightbox(0)"></div>
-        <div class="gallery-item" style="background-image:url('https://i.ytimg.com/vi/DSxWH230fUg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBJBzhcH-_8Ggogc41kBrAoNWaa5w')" onclick="openLightbox(1)"></div>
+        <div class="gallery-item" style="background-image:url('https://i.ytimg.com/vi/DSxWH230fUg/hq720.jpg')" onclick="openLightbox(1)"></div>
         <div class="gallery-item" style="background-image:url('https://www.topgear.com/sites/default/files/2021/07/Golf_VIII_R_Press-3.jpg')" onclick="openLightbox(2)"></div>
-        <div class="gallery-item" style="background-image:url('https://www.thedrive.com/wp-content/uploads/images-by-url-td/content/2018/03/domanig-mercedes-amg-gt-r.jpg?quality=85')" onclick="openLightbox(3)"></div>
+        <div class="gallery-item" style="background-image:url('https://www.thedrive.com/wp-content/uploads/2018/03/domanig-mercedes-amg-gt-r.jpg?quality=85')" onclick="openLightbox(3)"></div>
+        <div class="gallery-item" style="background-image:url('https://www.carscoops.com/wp-content/uploads/2023/08/Audi-RS3-Performance-Edition-1024x555.jpg')" onclick="openLightbox(4)"></div>
+        <div class="gallery-item" style="background-image:url('https://www.supercars.net/blog/wp-content/uploads/2022/06/2022-BMW-M4-CSL-001-2160-1-scaled.jpg')" onclick="openLightbox(5)"></div>
     </div>
 </section>
 
@@ -188,46 +238,46 @@
     <h2>WHAT OUR CUSTOMERS SAY</h2>
     <div class="testimonials-grid">
         <div class="testimonial-card">
-            <img class="testimonial-avatar" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100068528790557" alt="Customer 1">
-            <p class="testimonial-quote">"Paul's team did an amazing job on my BMW ECU remap. Power boost is insane!"</p>
-            <p class="testimonial-name">- John D., Pretoria</p>
+            <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
+            <p class="testimonial-quote">"Paul's team did an amazing Stage 3 tune on my M4 – gained over 180 kW! Insane power now!"</p>
+            <p class="testimonial-name">— John D., Pretoria East</p>
         </div>
         <div class="testimonial-card">
-            <img class="testimonial-avatar" src="https://thumbs.dreamstime.com/b/happy-customer-making-payment-to-friendly-cashier-store-happy-customer-making-payment-to-friendly-cashier-store-417727532.jpg" alt="Customer 2">
-            <p class="testimonial-quote">"Lost all keys to my Audi, but they sorted it out quickly. Highly recommend!"</p>
-            <p class="testimonial-name">- Sarah M., Centurion</p>
+            <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+            <p class="testimonial-quote">"Lost all keys to my 2019 Audi A4. They made new keys in under 2 hours. Lifesavers!"</p>
+            <p class="testimonial-name">— Sarah M., Centurion</p>
         </div>
         <div class="testimonial-card">
-            <img class="testimonial-avatar" src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/customer-profiling-13-20250409-4148423.webp" alt="Customer 3">
-            <p class="testimonial-quote">"Professional service for my Mercedes diagnostics. Fixed issues others couldn't."</p>
-            <p class="testimonial-name">- Mike R., Midrand</p>
+            <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Mike">
+            <p class="testimonial-quote">"Fixed complex electrical issues on my Mercedes that 3 other workshops couldn't. True professionals."</p>
+            <p class="testimonial-name">— Mike R., Midrand</p>
         </div>
         <div class="testimonial-card">
-            <img class="testimonial-avatar" src="https://img.freepik.com/premium-photo/young-female-customer-service-avatar_1106493-169013.jpg" alt="Customer 4">
-            <p class="testimonial-quote">"Stage 2 tuning on my Golf R transformed the car. Excellent work!"</p>
-            <p class="testimonial-name">- Lisa K., Pretoria</p>
+            <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/81.jpg" alt="Lisa">
+            <p class="testimonial-quote">"Stage 2 on my Golf 8 R is unbelievable. Best money I've ever spent on the car!"</p>
+            <p class="testimonial-name">— Lisa K., Menlyn</p>
         </div>
     </div>
 </section>
 
 <section id="booking">
     <h2>BOOK YOUR APPOINTMENT</h2>
-    <p style="text-align:center;font-size:1.8rem;color:var(--red);margin-bottom:3rem;font-weight:bold;">
+    <p style="text-align:center;font-size:2rem;color:var(--red);margin-bottom:4rem;font-weight:bold;">
         STRICTLY BY APPOINTMENT ONLY – NO WALK-INS
     </p>
     <div class="form-wrapper">
         <form onsubmit="sendBookingWhatsApp(event)">
             <div class="form-group">
                 <label>Full Name</label>
-                <input type="text" id="name" required placeholder="John Smith">
+                <input type="text" id="name" required placeholder="e.g. John Smith">
             </div>
             <div class="form-group">
                 <label>WhatsApp Number</label>
-                <input type="tel" id="phone" required placeholder="0827518458">
+                <input type="tel" id="phone" required placeholder="e.g. 0827518458">
             </div>
             <div class="form-group">
                 <label>Vehicle Make & Model</label>
-                <input type="text" id="vehicle" required placeholder="BMW M340i">
+                <input type="text" id="vehicle" required placeholder="e.g. BMW M340i">
             </div>
             <div class="form-group">
                 <label>Service Required</label>
@@ -236,7 +286,7 @@
                     <option>ECU Cloning</option>
                     <option>ECU Remapping / Tuning</option>
                     <option>All Keys Lost</option>
-                    <option>Add Key</option>
+                    <option>Add Key / Spare Key</option>
                     <option>Immo Off</option>
                     <option>TCU Cloning</option>
                     <option>Cluster Calibration</option>
@@ -247,22 +297,22 @@
             </div>
             <div class="form-group">
                 <label>Preferred Date (Mon–Fri)</label>
-                <input type="text" id="datePicker" required>
+                <input type="text" id="datePicker" required placeholder="Click to select">
             </div>
             <div class="form-group">
-                <label>Additional Info (optional)</label>
-                <textarea id="message" rows="4"></textarea>
+                <label>Message / Fault Codes (optional)</label>
+                <textarea id="message" rows="4" placeholder="Any error codes or specific issues?"></textarea>
             </div>
-            <button type="submit" class="submit-btn">SEND VIA WHATSAPP</button>
+            <button type="submit" class="submit-btn">SEND BOOKING VIA WHATSAPP</button>
         </form>
     </div>
 </section>
 
 <section id="location">
     <h2>FIND US</h2>
-    <p style="text-align:center;font-size:1.6rem;margin-bottom:3rem;">
+    <p style="text-align:center;font-size:1.8rem;margin-bottom:4rem;">
         <strong>487 Karel Trichardt Avenue, Mountain View, Pretoria</strong><br>
-        Mon–Thu: 07:30–17:00 • Fri: 07:30–16:00 • Weekends: Closed
+        Mon–Thu: 07:30–17:00 • Friday: 07:30–16:00 • Weekends: Closed
     </p>
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.028!2d28.220456!3d-25.709876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561e5f4a8b2c3%3A0x9ab5e8f3d1c2e4f5!2s487%20Karel%20Trichardt%20Ave!5e0!3m2!1sen!2sza!4v1734000000000" allowfullscreen="" loading="lazy"></iframe>
@@ -271,19 +321,20 @@
 
 <div class="wa-float">
     <a href="https://wa.me/27827518458?text=Hi%20Paul%2C%20I%20need%20help%20with%20my%20car!">
-        <i class="fab fa-whatsapp"></i>
+        WhatsApp Icon
     </a>
 </div>
 
 <div class="lightbox" id="lightbox">
-    <span class="close-lightbox" onclick="closeLightbox()">×</span>
-    <span class="nav-arrow prev" onclick="changePhoto(-1)">‹</span>
-    <span class="nav-arrow next" onclick="changePhoto(1)">›</span>
-    <img id="lightbox-img" src="" alt="">
+    <span class="close-lightbox" onclick="closeLightbox()">Close</span>
+    <span class="nav-arrow prev" onclick="changePhoto(-1)">Previous</span>
+    <span class="nav-arrow next" onclick="changePhoto(1)">Next</span>
+    <img id="lightbox-img" src="" alt="Gallery">
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
+    // Calendar - no weekends
     flatpickr("#datePicker", {
         dateFormat: "d M Y",
         minDate: "today",
@@ -291,6 +342,7 @@
         locale: { firstDayOfWeek: 1 }
     });
 
+    // WhatsApp booking
     function sendBookingWhatsApp(e) {
         e.preventDefault();
         const name = document.getElementById('name').value.trim();
@@ -306,12 +358,14 @@
         window.open(`https://wa.me/27827518458?text=${encodeURIComponent(text)}`, '_blank');
     }
 
-    // Lightbox
+    // Gallery Lightbox
     const images = [
         "https://cdn.motor1.com/images/mgl/WmYMq/s1/2021-bmw-m4-coupe-dyno-test-by-ind-distribution.webp",
-        "https://i.ytimg.com/vi/DSxWH230fUg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBJBzhcH-_8Ggogc41kBrAoNWaa5w",
+        "https://i.ytimg.com/vi/DSxWH230fUg/hq720.jpg",
         "https://www.topgear.com/sites/default/files/2021/07/Golf_VIII_R_Press-3.jpg",
-        "https://www.thedrive.com/wp-content/uploads/images-by-url-td/content/2018/03/domanig-mercedes-amg-gt-r.jpg?quality=85"
+        "https://www.thedrive.com/wp-content/uploads/2018/03/domanig-mercedes-amg-gt-r.jpg?quality=85",
+        "https://www.carscoops.com/wp-content/uploads/2023/08/Audi-RS3-Performance-Edition-1024x555.jpg",
+        "https://www.supercars.net/blog/wp-content/uploads/2022/06/2022-BMW-M4-CSL-001-2160-1-scaled.jpg"
     ];
     let current = 0;
     function openLightbox(i) {
@@ -329,14 +383,16 @@
         document.getElementById("lightbox-img").src = images[current];
     }
 
-    // Dark mode toggle
+    // Dark / Light mode
     function toggleTheme() {
         document.body.classList.toggle('light');
         const icon = document.querySelector('.theme-toggle i');
-        icon.classList.toggle('fa-moon');
-        icon.classList.toggle('fa-sun');
+        if (document.body.classList.contains('light')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+        }
     }
 </script>
 </body>
 </html>
-```
