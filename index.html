@@ -3,101 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA09 Trading (Pty) Ltd - Build with Confidence</title>
+    <title>DNA09 Trading (Pty) Ltd | Accounting, Bookkeeping & Construction Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--light);
+            color: #1e293b;
+            line-height: 1.7;
         }
         header {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://c8.alamy.com/comp/DG3B95/african-construction-worker-working-on-corrugated-asbestos-roof-DG3B95.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(30,58,138,0.88), rgba(30,58,138,0.88)),
+                        url('https://images.unsplash.com/photo-1503387762-592deb58caa5?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed;
             color: white;
             text-align: center;
-            padding: 80px 20px 60px;
+            padding: 110px 20px 80px;
+        }
+        .logo {
+            width: 110px;
+            height: auto;
+            margin-bottom: 20px;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.8em;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
-        header p {
-            font-size: 1.3em;
+        .tagline {
+            font-size: 1.35rem;
+            opacity: 0.95;
         }
         nav {
-            background-color: #2c3e50;
-            padding: 12px;
-            text-align: center;
+            background: var(--dark);
+            padding: 1.1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
         }
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        nav a:hover { color: var(--secondary); }
+
         section {
-            padding: 40px 20px;
+            padding: 70px 20px;
             max-width: 1100px;
-            margin: auto;
-        }
-        .logo {
-            max-width: 180px;
-            margin-bottom: 20px;
+            margin: 0 auto;
         }
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            color: var(--primary);
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
         }
-        .services-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
+        h2::after {
+            content: '';
+            width: 90px;
+            height: 4px;
+            background: var(--secondary);
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 2px;
         }
-        .service-card {
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.15rem;
+            text-align: center;
+            color: #334155;
+        }
+        .proposal {
             background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            flex: 1;
-            min-width: 320px;
-            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            margin: 2rem 0;
+        }
+        .proposal h3 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
         }
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding-left: 0;
         }
-        .contact-info {
-            text-align: center;
-            font-size: 1.1em;
+        ul li {
+            margin: 12px 0;
+            position: relative;
+            padding-left: 30px;
         }
-        footer {
-            background-color: #2c3e50;
+        ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+        .contact-section {
+            background: var(--primary);
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 80px 20px;
+        }
+        .contact-info p {
+            font-size: 1.3rem;
+            margin: 1.2rem 0;
+        }
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background: #22c55e;
+            transform: translateY(-3px);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            font-size: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        footer {
+            background: var(--dark);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            font-size: 0.95rem;
         }
         @media (max-width: 768px) {
-            header {
-                padding: 60px 15px 40px;
-            }
-            header h1 {
-                font-size: 2.2em;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-            .services-grid {
-                flex-direction: column;
-            }
+            header { padding: 80px 15px 60px; }
+            header h1 { font-size: 2.4rem; }
+            nav ul { flex-direction: column; gap: 1.2rem; }
+            .proposal { padding: 1.8rem; }
         }
     </style>
 </head>
@@ -106,87 +190,116 @@
 <header>
     <img src="https://www.logoku.com/image/data/items1/1747466167_logokucom_modern-infinity-dna-helix.jpg.webp" alt="DNA09 Trading Logo" class="logo">
     <h1>DNA09 Trading (Pty) Ltd</h1>
-    <p>Co Reg: 2009/006554/07 | Build with Confidence</p>
+    <p class="tagline">Accurate Financial Services • Construction Consulting • Build with Confidence</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#proposal">Business Proposal</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
 <section id="home">
     <h2>Welcome to DNA09 Trading</h2>
-    <p>We are a professional company based in Witbank, Mpumalanga, specializing in construction and DIY consulting, material supply, and reliable accounting & bookkeeping services. Our goal is to help you execute projects efficiently, cost-effectively, and to the highest standards while keeping your finances accurate and compliant.</p>
+    <p class="intro-text">
+        We provide professional accounting & bookkeeping services combined with expert construction consulting and material supply solutions. 
+        Our mission is to deliver accurate, compliant financial management and reliable project support so you can focus on growing your business.
+    </p>
 </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p><strong>Location:</strong> PostNet Suite 112, Private Bag 7214, Witbank, 1035</p>
-    <p>We bring industry experience to deliver practical advice, quality focus, safety, and customized solutions for every client — from contractors and developers to small businesses and individuals.</p>
-</section>
+<section id="proposal">
+    <h2>Business Proposal: Accounting & Bookkeeping Services</h2>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
+    <div class="proposal">
+        <h3>1. Introduction</h3>
+        <p>This proposal outlines the accounting and bookkeeping services offered by DNA09 Trading (Pty) Ltd. Our objective is to provide accurate, compliant, and timely financial services that allow our clients to focus on growing their business while we manage their financial records efficiently and professionally.</p>
 
-        <div class="service-card">
-            <h3>Construction & DIY Consulting + Materials</h3>
-            <p>Expert planning, technical advice, material selection, cost estimation, quality control, safety guidance, and more.</p>
-            <p><strong>Materials Supplied:</strong></p>
-            <ul>
-                <li>Cement / Sand</li>
-                <li>Bricks</li>
-                <li>Pipes</li>
-                <li>Copper</li>
-                <li>Unitwist</li>
-                <li>Galvanised</li>
-                <li>Showers</li>
-                <li>Roofing Design & Supply</li>
-                <li>Interior & Exterior Paint</li>
-                <li>Flooring</li>
-            </ul>
+        <h3>2. Scope of Services</h3>
+        <p>We offer a comprehensive range of accounting and bookkeeping services, including but not limited to the following:</p>
 
-<grok-card data-id="ebd700" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+        <h4>2.1 Creditors Management</h4>
+        <ul>
+            <li>Posting and recording of creditor transactions</li>
+            <li>Reconciliation of creditor statements</li>
+            <li>Preparation and processing of creditor payments</li>
+            <li>Monitoring and management of outstanding creditor balances</li>
+        </ul>
 
+        <h4>2.2 Debtors Management</h4>
+        <ul>
+            <li>Generating and issuing debtor invoices</li>
+            <li>Preparation of debtor statements</li>
+            <li>Following up on outstanding debtor payments</li>
+            <li>Monitoring accounts receivable to improve cash flow</li>
+        </ul>
 
+        <h4>2.3 Bank Reconciliation</h4>
+        <ul>
+            <li>Monthly reconciliation of bank accounts</li>
+            <li>Identification and resolution of discrepancies</li>
+            <li>Ensuring accuracy between bank statements and accounting records</li>
+        </ul>
 
-<grok-card data-id="d3f33f" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+        <h4>2.4 Financial Reporting</h4>
+        <ul>
+            <li>Preparation of the Trial Balance</li>
+            <li>Preparation of the Income Statement</li>
+            <li>Preparation of the Cash Flow Statement</li>
+            <li>Ensuring financial reports are accurate and ready for management review</li>
+        </ul>
 
-        </div>
+        <h4>2.5 Tax Compliance</h4>
+        <ul>
+            <li>Preparation and submission of VAT201 reports</li>
+            <li>Ensuring compliance with applicable tax regulations and deadlines</li>
+        </ul>
 
-        <div class="service-card">
-            <h3>Accounting & Bookkeeping Services</h3>
-            <p>We provide accurate, compliant, and timely financial management so you can focus on growing your business.</p>
-            <ul>
-                <li><strong>Creditors Management:</strong> Posting/recording transactions, statement reconciliation, payment preparation/processing, monitoring outstanding balances.</li>
-                <li><strong>Debtors Management:</strong> Invoice generation/issuing, statement preparation, follow-ups on outstanding payments, monitoring receivables for better cash flow.</li>
-                <li><strong>Bank Reconciliation:</strong> Monthly bank account reconciliation, discrepancy identification/resolution, accuracy assurance.</li>
-                <li><strong>Financial Reporting:</strong> Trial Balance, Income Statement, Cash Flow Statement preparation — accurate and ready for review.</li>
-                <li><strong>Tax Compliance:</strong> VAT201 preparation/submission, full compliance with tax regulations and deadlines.</li>
-            </ul>
-            <p><strong>Value to You:</strong> Up-to-date records, improved cash flow, reduced admin, statutory compliance, reliable data for decisions.</p>
-            <p>Pricing based on transaction volume, complexity, and needs — contact us for a detailed quotation.</p>
+        <h3>3. Value to the Client</h3>
+        <p>By engaging our services, clients will benefit from:</p>
+        <ul>
+            <li>Accurate and up-to-date financial records</li>
+            <li>Improved cash flow management</li>
+            <li>Reduced administrative burden</li>
+            <li>Compliance with statutory and tax requirements</li>
+            <li>Reliable financial information for decision-making</li>
+        </ul>
 
-<grok-card data-id="bf4bc5" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+        <h3>4. Service Delivery</h3>
+        <p>All services are performed using professional accounting standards and best practices. We maintain strict confidentiality and ensure that all client information is handled securely and ethically.</p>
 
-        </div>
+        <h3>5. Pricing</h3>
+        <p>Pricing will be determined based on the volume of transactions, complexity of work, and specific client requirements. A detailed quotation will be provided upon assessment of the client’s needs.</p>
 
+        <h3>6. Conclusion</h3>
+        <p>DNA09 Trading (Pty) Ltd is committed to delivering dependable and high-quality accounting and bookkeeping services. We look forward to the opportunity to support your business with accurate financial management and professional service delivery.</p>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
+<section id="contact" class="contact-section">
+    <h2>Get in Touch</h2>
     <div class="contact-info">
+        <p><strong>DNA09 Trading (Pty) Ltd</strong></p>
+        <p>Co Reg: 2009/006554/07</p>
+        <p>PostNet Suite 112, Private Bag 7214, Witbank, 1035</p>
         <p><strong>Cell:</strong> 082 618 0296</p>
-        <p><strong>Email:</strong> <a href="mailto:info@dna09.co.za">info@dna09.co.za</a></p>
-        <p><strong>Address:</strong> PostNet Suite 112, Private Bag 7214, Witbank, 1035</p>
+        <p><strong>Email:</strong> <a href="mailto:info@dna09.co.za" style="color:#a5d8ff;">info@dna09.co.za</a></p>
+
+        <a href="https://wa.me/27826180296?text=Good%20day%2C%20I%20would%20like%20to%20enquire%20about%20your%20accounting%20%26%20bookkeeping%20services%20or%20construction%20consulting." 
+           class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
     </div>
 </section>
+
+<a href="https://wa.me/27826180296?text=Hello%20DNA09%20Trading%2C%20I%27m%20interested%20in%20your%20services..." 
+   class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 <footer>
-    <p>&copy; 2026 DNA09 Trading (Pty) Ltd | All rights reserved.</p>
+    <p>© 2026 DNA09 Trading (Pty) Ltd | All Rights Reserved</p>
 </footer>
 
 </body>
