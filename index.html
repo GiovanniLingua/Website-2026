@@ -7,46 +7,16 @@
     <meta name="description" content="Rose Foundation Approved Used Oil Collection & Recycling">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        :root {
-            --red: #c8102e;
-            --dark: #111111;
-        }
+        :root { --red: #c8102e; --dark: #111111; }
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { 
-            font-family: 'Arial', sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            background: #f8f9fa;
-        }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
 
-        /* Header */
-        header { 
-            background: var(--dark); 
-            color: white; 
-            padding: 12px 0; 
-            position: sticky; 
-            top: 0; 
-            z-index: 100; 
-        }
-        .logo { 
-            display: flex; 
-            align-items: center; 
-            gap: 10px; 
-        }
-        .logo img { 
-            height: 68px; 
-            width: auto; 
-        }
-        .logo-text {
-            font-size: 1.4rem;
-            font-weight: 900;
-            line-height: 1.1;
-        }
+        header { background: var(--dark); color: white; padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+        .logo img { height: 68px; width: auto; }
 
-        /* Hero */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
-                        url('assets/images/hero-oil-truck.jpg') center/cover no-repeat;
+                        url('hero-oil-truck.jpg') center/cover no-repeat;
             min-height: 65vh;
             display: flex;
             align-items: center;
@@ -54,31 +24,11 @@
             text-align: center;
             padding: 20px;
         }
-        .hero h1 { font-size: 2.6rem; margin-bottom: 8px; }
-        .hero .subtitle { font-size: 1.35rem; color: #ffd700; margin-bottom: 20px; }
 
-        /* Sections */
         .section { padding: 60px 15px; }
-        .container { max-width: 1200px; margin: auto; }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-        .card img { 
-            width: 100%; 
-            height: 190px; 
-            object-fit: cover; 
-        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+        .card img { width: 100%; height: 190px; object-fit: cover; }
 
-        /* Contact Form */
         .contact-form {
             background: white;
             padding: 35px 20px;
@@ -87,18 +37,11 @@
             max-width: 580px;
             margin: 30px auto;
         }
-        .form-group { margin-bottom: 18px; }
-        .form-group label { 
-            display: block; 
-            margin-bottom: 6px; 
-            font-weight: 600; 
-        }
         .form-group input {
             width: 100%;
             padding: 14px;
             border: 1px solid #ddd;
             border-radius: 6px;
-            font-size: 1rem;
         }
         .btn-whatsapp {
             background: #25D366;
@@ -107,13 +50,9 @@
             border: none;
             border-radius: 8px;
             font-size: 1.2rem;
-            font-weight: bold;
             width: 100%;
             cursor: pointer;
-            margin-top: 15px;
         }
-
-        /* Floating WhatsApp */
         .whatsapp-float {
             position: fixed;
             bottom: 20px;
@@ -129,103 +68,79 @@
             font-size: 2rem;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             z-index: 1000;
-            text-decoration: none;
         }
-
-        footer { 
-            background: #111; 
-            color: #ccc; 
-            padding: 40px 15px; 
-            text-align: center; 
-            font-size: 0.95rem; 
-        }
+        footer { background: #111; color: #ccc; padding: 40px 15px; text-align: center; }
     </style>
 </head>
 <body>
 
-    <!-- Top Bar -->
-    <div style="background:#222; color:white; padding:10px; text-align:center; font-size:0.95rem;">
+    <div style="background:#222; color:white; padding:10px; text-align:center;">
         Rose Foundation Approved • Call: <strong>065 800 3371</strong>
     </div>
 
-    <!-- Header -->
     <header>
-        <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:0 15px;">
+        <div style="max-width:1200px; margin:auto; padding:0 15px; display:flex; justify-content:space-between; align-items:center;">
             <div class="logo">
-                <img src="assets/images/logo-apex.png" alt="Apex Operations Logo">
-                <div class="logo-text">
-                    APEX<br>
-                    <span style="color:#c8102e;">OPERATIONS</span>
-                </div>
+                <img src="logo-apex.png" alt="Apex Operations">
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
     <section class="hero">
-        <div class="container">
-            <img src="assets/images/rose-foundation-seal.png" alt="Rose Foundation" style="height:100px; margin-bottom:15px;">
+        <div style="max-width:1200px; margin:auto; padding:0 15px;">
+            <img src="rose-foundation-seal.png" alt="Rose Foundation" style="height:100px; margin-bottom:15px;">
             <h1>USED OIL COLLECTORS</h1>
-            <p class="subtitle">COLLECT • RECYCLE • PROTECT</p>
-            <a href="#contact" style="background:var(--red); color:white; padding:14px 35px; display:inline-block; margin-top:20px; border-radius:6px; text-decoration:none; font-size:1.1rem;">
+            <p style="font-size:1.35rem; color:#ffd700;">COLLECT • RECYCLE • PROTECT</p>
+            <a href="#contact" style="background:var(--red); color:white; padding:14px 35px; display:inline-block; margin-top:25px; border-radius:6px; text-decoration:none; font-size:1.1rem;">
                 REQUEST COLLECTION
             </a>
         </div>
     </section>
 
-    <!-- Services -->
     <section class="section" id="services">
-        <div class="container">
+        <div style="max-width:1200px; margin:auto; padding:0 15px;">
             <h2 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">Our Services</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="assets/images/used-oil-barrel.jpg" alt="Collection">
-                    <div style="padding:20px;">
-                        <h3>Safe & Compliant Collection</h3>
-                        <p>Rose Foundation Approved</p>
-                    </div>
+                    <img src="used-oil-barrel.jpg" alt="Collection">
+                    <div style="padding:20px;"><h3>Safe & Compliant Collection</h3><p>Rose Foundation Approved</p></div>
                 </div>
                 <div class="card">
-                    <img src="assets/images/factory-background.jpg" alt="Recycling">
-                    <div style="padding:20px;">
-                        <h3>Recycling & Re-refining</h3>
-                        <p>Environmentally Responsible</p>
-                    </div>
+                    <img src="factory-background.jpg" alt="Recycling">
+                    <div style="padding:20px;"><h3>Recycling & Re-refining</h3><p>Environmentally Responsible</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What We Collect -->
     <section class="section" style="background:#111; color:white;" id="collect">
-        <div class="container">
+        <div style="max-width:1200px; margin:auto; padding:0 15px;">
             <h2 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">WE COLLECT</h2>
             <div class="grid">
-                <div class="card"><img src="assets/images/engine-oil-icon.png" alt="Engine"><div style="padding:15px;"><strong>Engine Oil</strong></div></div>
-                <div class="card"><img src="assets/images/hydraulic-oil-icon.png" alt="Hydraulic"><div style="padding:15px;"><strong>Hydraulic Oil</strong></div></div>
-                <div class="card"><img src="assets/images/gear-oil-icon.png" alt="Gear"><div style="padding:15px;"><strong>Gear Oil</strong></div></div>
-                <div class="card"><img src="assets/images/industrial-oil-icon.png" alt="Industrial"><div style="padding:15px;"><strong>Industrial Oil</strong></div></div>
+                <div class="card"><img src="engine-oil-icon.png" alt="Engine"><div style="padding:15px;"><strong>Engine Oil</strong></div></div>
+                <div class="card"><img src="hydraulic-oil-icon.png" alt="Hydraulic"><div style="padding:15px;"><strong>Hydraulic Oil</strong></div></div>
+                <div class="card"><img src="gear-oil-icon.png" alt="Gear"><div style="padding:15px;"><strong>Gear Oil</strong></div></div>
+                <div class="card"><img src="industrial-oil-icon.png" alt="Industrial"><div style="padding:15px;"><strong>Industrial Oil</strong></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
     <section class="section" id="contact">
-        <div class="container">
+        <div style="max-width:1200px; margin:auto; padding:0 15px;">
             <h2 style="text-align:center; font-size:2.2rem; margin-bottom:15px;">Get In Contact</h2>
             <p style="text-align:center; margin-bottom:30px;">Fill the form below to send us a WhatsApp message</p>
             
             <div class="contact-form">
                 <form id="oilForm">
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:18px;">
                         <label>Client Name</label>
                         <input type="text" id="name" placeholder="Your Full Name" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:18px;">
                         <label>Location</label>
                         <input type="text" id="location" placeholder="e.g. Pretoria, Johannesburg" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:18px;">
                         <label>Liters of Oil</label>
                         <input type="number" id="liters" placeholder="e.g. 500" required>
                     </div>
@@ -237,13 +152,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2026 Apex Operations (Pty) Ltd • All Rights Reserved</p>
         <p style="margin-top:10px;">065 800 3371 | info@apexoperations.co.za</p>
     </footer>
 
-    <!-- Floating WhatsApp -->
     <a href="https://wa.me/27658003371?text=Good%20day%2C%20I%20would%20like%20to%20sell%20oil." 
        class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
@@ -255,12 +168,10 @@
             const name = document.getElementById('name').value.trim();
             const location = document.getElementById('location').value.trim();
             const liters = document.getElementById('liters').value.trim();
-            
             if (!name || !location || !liters) {
                 alert("Please fill in all fields.");
                 return;
             }
-            
             const message = `Good day,%0A%0AI am from ${encodeURIComponent(location)}.%0AI have ${encodeURIComponent(liters)} liters of oil that I want to sell.%0A%0AKind regards%0A${encodeURIComponent(name)}`;
             window.open(`https://wa.me/27658003371?text=${message}`, '_blank');
         });
