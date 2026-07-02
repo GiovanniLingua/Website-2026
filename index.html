@@ -1,436 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA09 Trading (Pty) Ltd | Construction & Accounting Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Apex Operations - Used Oil Collectors</title>
+    <meta name="description" content="Rose Foundation Approved Used Oil Collection & Recycling">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1e40af;
-            --secondary: #3b82f6;
-            --accent: #10b981;
-            --dark: #0f172a;
-            --light: #f8fafc;
+            --red: #c8102e;
+            --dark: #111111;
         }
         * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: var(--light);
-            color: #1e293b;
-            line-height: 1.7;
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f8f9fa;
         }
-        header {
-            background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.85)),
-                        url('https://images.unsplash.com/photo-1503387762-592deb58caa5?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 20px 60px;
+
+        /* Header */
+        header { 
+            background: var(--dark); 
+            color: white; 
+            padding: 12px 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
         }
-        .logo {
-            width: 180px;
-            background: white;
-            border-radius: 50%;
-            padding: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-            margin-bottom: 25px;
-        }
-        header h1 {
-            font-size: 3.6rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-        .tagline, .address-info {
-            font-size: 1.4rem;
-            opacity: 0.95;
-            max-width: 900px;
-            margin: 0.6rem auto;
-        }
-        .address-info {
-            font-size: 1.25rem;
-            margin-top: 1.5rem;
-        }
-        nav {
-            background: var(--dark);
-            padding: 1.4rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        nav ul {
-            list-style: none;
+        .logo img { height: 65px; width: auto; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('assets/images/hero-oil-truck.jpg') center/cover no-repeat;
+            min-height: 70vh;
             display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-        }
-        nav a {
+            align-items: center;
             color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.15rem;
-            transition: color 0.3s;
-        }
-        nav a:hover { color: var(--secondary); }
-        section { padding: 90px 20px; max-width: 1280px; margin: 0 auto; }
-        h2 {
-            color: var(--primary);
-            font-size: 2.8rem;
             text-align: center;
-            margin: 2.5rem 0 1.5rem;
-            position: relative;
+            padding: 20px;
         }
-        h2::after {
-            content: '';
-            width: 140px;
-            height: 6px;
-            background: var(--secondary);
-            display: block;
-            margin: 20px auto 0;
-            border-radius: 3px;
-        }
-        .section-header-img {
-            width: 100%;
-            max-height: 320px;
-            object-fit: cover;
-            border-radius: 16px;
-            margin-bottom: 2rem;
-            box-shadow: 0 12px 36px rgba(0,0,0,0.15);
-        }
-        .services-grid {
+        .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .hero .subtitle { font-size: 1.4rem; color: #ffd700; }
+
+        /* Sections */
+        .section { padding: 70px 15px; }
+        .container { max-width: 1200px; margin: auto; }
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            gap: 3.5rem;
-            margin: 4rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
-        .service-card {
+        .card {
             background: white;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.14);
-            transition: transform 0.45s ease, box-shadow 0.45s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-18px);
-            box-shadow: 0 40px 90px rgba(0,0,0,0.22);
-        }
-        .card-content { padding: 3rem; }
-        .card-content h3 {
-            color: var(--primary);
-            font-size: 2.3rem;
-            margin-bottom: 1.8rem;
-        }
-        ul { list-style: none; padding: 0; }
-        ul li {
-            margin: 16px 0;
-            padding-left: 38px;
-            position: relative;
-            font-size: 1.2rem;
-        }
-        ul li::before {
-            content: '\f058';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--accent);
-            position: absolute;
-            left: 0;
-            top: 4px;
-            font-size: 1.3rem;
-        }
-        .proposal {
-            background: white;
-            border-radius: 24px;
-            padding: 3.5rem;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.14);
-            margin: 4rem 0;
-        }
-        .proposal h4 {
-            color: var(--primary);
-            font-size: 1.9rem;
-            margin: 2.5rem 0 1.2rem;
-        }
-        .contact-section {
-            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 3.5rem;
-            margin: 3.5rem 0;
-        }
-        .social-icon {
-            color: white;
-            font-size: 4rem;
-            transition: all 0.35s ease;
-        }
-        .social-icon:hover {
-            color: var(--secondary);
-            transform: scale(1.25) rotate(8deg);
-        }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 45px;
-            right: 45px;
-            width: 85px;
-            height: 85px;
-            background: #25D366;
-            color: white;
-            border-radius: 50%;
-            font-size: 3.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 16px 40px rgba(37,213,102,0.45);
-            z-index: 9999;
-            transition: transform 0.35s;
-        }
-        .whatsapp-float:hover { transform: scale(1.18); }
-        footer {
-            background: var(--dark);
-            color: #94a3b8;
-            text-align: center;
-            padding: 4rem 1rem;
-            font-size: 1rem;
-        }
-        .footer-credit {
-            margin-top: 1.8rem;
-            font-size: 0.95rem;
-            opacity: 0.8;
-        }
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #1e293b;
-            color: white;
-            padding: 1.4rem 3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 -6px 20px rgba(0,0,0,0.4);
-            z-index: 10000;
-        }
-        .cookie-btn {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 12px 32px;
             border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { 
+            display: block; 
+            margin-bottom: 6px; 
+            font-weight: 600; 
             font-size: 1.05rem;
         }
-        @media (max-width: 768px) {
-            header { padding: 100px 15px 60px; }
-            header h1 { font-size: 2.9rem; }
-            nav ul { flex-direction: column; gap: 1.5rem; }
-            .social-icons { gap: 2.5rem; }
-            .social-icon { font-size: 3.2rem; }
-            .whatsapp-float { bottom: 30px; right: 30px; width: 70px; height: 70px; font-size: 2.6rem; }
-            .cookie-banner { flex-direction: column; gap: 1rem; text-align: center; }
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
         }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        footer { background: #111; color: #ccc; padding: 40px 15px; text-align: center; font-size: 0.95rem; }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="DNA09 Trading Logo" class="logo">
-    <h1>DNA09 Trading (Pty) Ltd</h1>
-    <p class="tagline">DNA TRADING</p>
-    <p class="address-info">
-        PostNet Suite 112 • Private Bag 7214 • Witbank, 1035<br>
-        Co Reg: 2009/006554/07 • Cell: 082 618 0296 • Email: info@dna09.co.za
-    </p>
-</header>
+    <!-- Top Bar -->
+    <div class="top-bar" style="background:#222; color:white; padding:10px; text-align:center; font-size:0.95rem;">
+        Rose Foundation Approved • Call: <strong>065 800 3371</strong>
+    </div>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#construction">Construction</a></li>
-        <li><a href="#accounting">Accounting</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<section id="home">
-    <h2>Welcome to DNA09 Trading</h2>
-    <p style="max-width:900px; margin:0 auto 3rem; font-size:1.3rem; text-align:center;">
-        Professional services in two key areas:<br>
-        → Expert construction consulting with material supply<br>
-        → Accurate, compliant accounting & bookkeeping
-    </p>
-</section>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p style="max-width:920px; margin:0 auto 3rem; font-size:1.25rem; text-align:center;">
-        DNA09 Trading (Pty) Ltd is a trusted Witbank-based company delivering excellence in construction consulting and financial services. We support contractors, developers and businesses with practical project solutions and professional financial management.
-    </p>
-</section>
-
-<section id="construction">
-    <img src="construction.jpg" alt="Construction Header Image" class="section-header-img">
-    <h2>Construction Consulting & Materials Supply</h2>
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="card-content">
-                <h3>Full Scope of Services</h3>
-                <ul>
-                    <li>Project planning and management</li>
-                    <li>Technical advice for building and renovations</li>
-                    <li>Material selection and detailed cost estimates</li>
-                    <li>Quality control and safety guidance</li>
-                    <li>Supply of cement / sand</li>
-                    <li>Supply of bricks</li>
-                    <li>Supply of pipes</li>
-                    <li>Supply of copper</li>
-                    <li>Supply of Unitwist</li>
-                    <li>Supply of galvanised items</li>
-                    <li>Supply of showers</li>
-                    <li>Roofing design and supply</li>
-                    <li>Interior & exterior paint supply</li>
-                    <li>Flooring supply</li>
-                </ul>
+    <!-- Header -->
+    <header>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:0 15px;">
+            <div class="logo">
+                <img src="assets/images/logo-apex.png" alt="Apex Operations">
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<section id="accounting">
-    <img src="accounting.jpg" alt="Accounting Header Image" class="section-header-img">
-    <h2>Accounting & Bookkeeping Services</h2>
-    <div class="proposal">
-        <h3>Business Proposal: Accounting & Bookkeeping Services</h3>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <img src="assets/images/rose-foundation-seal.png" alt="Rose Foundation" style="height:100px; margin-bottom:15px;">
+            <h1>USED OIL COLLECTORS</h1>
+            <p class="subtitle">COLLECT • RECYCLE • PROTECT</p>
+            <a href="#contact" style="background:var(--red); color:white; padding:14px 35px; display:inline-block; margin-top:20px; border-radius:6px; text-decoration:none; font-size:1.1rem;">
+                REQUEST COLLECTION
+            </a>
+        </div>
+    </section>
 
-        <h4>1. Introduction</h4>
-        <p>This proposal outlines the accounting and bookkeeping services offered by DNA09 Trading (Pty) Ltd. Our objective is to provide accurate, compliant, and timely financial services that allow our clients to focus on growing their business while we manage their financial records efficiently and professionally.</p>
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">Our Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="assets/images/used-oil-barrel.jpg" alt="Collection">
+                    <div style="padding:20px;">
+                        <h3>Safe & Compliant Collection</h3>
+                        <p>Rose Foundation Approved</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/factory-background.jpg" alt="Recycling">
+                    <div style="padding:20px;">
+                        <h3>Recycling & Re-refining</h3>
+                        <p>Environmentally Responsible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h4>2. Scope of Services</h4>
-        <p>We offer a comprehensive range of accounting and bookkeeping services, including but not limited to the following:</p>
+    <!-- What We Collect -->
+    <section class="section" style="background:#111; color:white;" id="collect">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">WE COLLECT</h2>
+            <div class="grid">
+                <div class="card"><img src="assets/images/engine-oil-icon.png" alt="Engine"><div style="padding:15px;"><strong>Engine Oil</strong></div></div>
+                <div class="card"><img src="assets/images/hydraulic-oil-icon.png" alt="Hydraulic"><div style="padding:15px;"><strong>Hydraulic Oil</strong></div></div>
+                <div class="card"><img src="assets/images/gear-oil-icon.png" alt="Gear"><div style="padding:15px;"><strong>Gear Oil</strong></div></div>
+                <div class="card"><img src="assets/images/industrial-oil-icon.png" alt="Industrial"><div style="padding:15px;"><strong>Industrial Oil</strong></div></div>
+            </div>
+        </div>
+    </section>
 
-        <h5>2.1 Creditors Management</h5>
-        <ul>
-            <li>Posting and recording of creditor transactions</li>
-            <li>Reconciliation of creditor statements</li>
-            <li>Preparation and processing of creditor payments</li>
-            <li>Monitoring and management of outstanding creditor balances</li>
-        </ul>
+    <!-- Contact Form -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.2rem; margin-bottom:15px;">Get In Contact</h2>
+            <p style="text-align:center; margin-bottom:30px;">Fill the form below to send us a WhatsApp message</p>
 
-        <h5>2.2 Debtors Management</h5>
-        <ul>
-            <li>Generating and issuing debtor invoices</li>
-            <li>Preparation of debtor statements</li>
-            <li>Following up on outstanding debtor payments</li>
-            <li>Monitoring accounts receivable to improve cash flow</li>
-        </ul>
+            <div class="contact-form">
+                <form id="oilForm">
+                    <div class="form-group">
+                        <label>Client Name</label>
+                        <input type="text" id="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" id="location" placeholder="e.g. Pretoria, Johannesburg" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Liters of Oil</label>
+                        <input type="number" id="liters" placeholder="e.g. 500" required>
+                    </div>
 
-        <h5>2.3 Bank Reconciliation</h5>
-        <ul>
-            <li>Monthly reconciliation of bank accounts</li>
-            <li>Identification and resolution of discrepancies</li>
-            <li>Ensuring accuracy between bank statements and accounting records</li>
-        </ul>
+                    <button type="submit" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> SEND VIA WHATSAPP
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-        <h5>2.4 Financial Reporting</h5>
-        <ul>
-            <li>Preparation of the Trial Balance</li>
-            <li>Preparation of the Income Statement</li>
-            <li>Preparation of the Cash Flow Statement</li>
-            <li>Ensuring financial reports are accurate and ready for management review</li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Apex Operations (Pty) Ltd • All Rights Reserved</p>
+        <p style="margin-top:10px;">065 800 3371 | info@apexoperations.co.za</p>
+    </footer>
 
-        <h5>2.5 Tax Compliance</h5>
-        <ul>
-            <li>Preparation and submission of VAT201 reports</li>
-            <li>Ensuring compliance with applicable tax regulations and deadlines</li>
-        </ul>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/27658003371?text=Good%20day%2C%20I%20would%20like%20to%20sell%20oil." 
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-        <h4>3. Value to the Client</h4>
-        <p>By engaging our services, clients will benefit from:</p>
-        <ul>
-            <li>Accurate and up-to-date financial records</li>
-            <li>Improved cash flow management</li>
-            <li>Reduced administrative burden</li>
-            <li>Compliance with statutory and tax requirements</li>
-            <li>Reliable financial information for decision-making</li>
-        </ul>
-
-        <h4>4. Service Delivery</h4>
-        <p>All services are performed using professional accounting standards and best practices. We maintain strict confidentiality and ensure that all client information is handled securely and ethically.</p>
-
-        <h4>5. Pricing</h4>
-        <p>Pricing will be determined based on the volume of transactions, complexity of work, and specific client requirements. A detailed quotation will be provided upon assessment of the client's needs.</p>
-
-        <h4>6. Conclusion</h4>
-        <p>DNA09 Trading (Pty) Ltd is committed to delivering dependable and high-quality accounting and bookkeeping services. We look forward to the opportunity to support your business with accurate financial management and professional service delivery.</p>
-    </div>
-</section>
-
-<section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p style="font-size:1.4rem; margin:1.5rem 0; max-width:800px; margin-left:auto; margin-right:auto;">
-        DNA09 Trading (Pty) Ltd • Co Reg: 2009/006554/07<br>
-        PostNet Suite 112, Private Bag 7214, Witbank, 1035<br><br>
-        <strong>Cell:</strong> 082 618 0296<br>
-        <strong>Email:</strong> info@dna09.co.za
-    </p>
-
-    <div class="social-icons">
-        <a href="https://www.facebook.com/share/16vh62J7Wd/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/27826180296?text=Hello%20DNA09%20Trading..." target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:info@dna09.co.za" class="social-icon"><i class="fas fa-envelope"></i></a>
-    </div>
-</section>
-
-<a href="https://wa.me/27826180296?text=Hello%20DNA09%20Trading..." target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- Cookie Consent Banner -->
-<div class="cookie-banner" id="cookieBanner">
-    <div>We use cookies to enhance your experience and analyze site usage.</div>
-    <button class="cookie-btn" id="acceptCookies">Allow Cookies</button>
-</div>
-
-<footer>
-    <p>© 2026 DNA09 Trading (Pty) Ltd | All Rights Reserved</p>
-    <p class="footer-credit">This page was built by <strong>NEXUS IT</strong></p>
-</footer>
-
-<script>
-    // Smooth scroll with offset for header
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    <script>
+        document.getElementById('oilForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const target = document.getElementById(targetId);
-            if (target) {
-                const headerHeight = 80;
-                const yOffset = -headerHeight;
-                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
+            
+            const name = document.getElementById('name').value.trim();
+            const location = document.getElementById('location').value.trim();
+            const liters = document.getElementById('liters').value.trim();
+
+            if (!name || !location || !liters) {
+                alert("Please fill in all fields.");
+                return;
             }
+
+            const message = `Good day,%0A%0AI am from ${encodeURIComponent(location)}.%0AI have ${encodeURIComponent(liters)} liters of oil that I want to sell.%0A%0AKind regards%0A${encodeURIComponent(name)}`;
+            window.open(`https://wa.me/27658003371?text=${message}`, '_blank');
         });
-    });
-
-    // Cookie banner logic
-    const cookieBanner = document.getElementById('cookieBanner');
-    const acceptBtn = document.getElementById('acceptCookies');
-
-    if (!localStorage.getItem('cookiesAccepted')) {
-        cookieBanner.style.display = 'flex';
-    }
-
-    acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookiesAccepted', 'true');
-        cookieBanner.style.display = 'none';
-    });
-</script>
-
+    </script>
 </body>
 </html>
